@@ -135,6 +135,9 @@ pwsh -NoProfile -File .\VulkanProofs\Test-GgmlApertureInterception.ps1 -Bytes 81
 
 # Full correctness and transport verification suite
 pwsh -NoProfile -File .\Verify.ps1
+
+# Safe 22.Q4 download, validation, unpack, and REV_05 preparation only
+pwsh -NoProfile -File .\Prepare-AmdPro22Q4V340L.ps1 -SevenZipPath 'C:\Program Files\7-Zip\7z.exe'
 ```
 
 `Verify.ps1` writes fresh, machine-readable and Markdown receipts under `Receipts/`. Its default transfer sweep is intentionally substantial; use `-Sizes 8192 -Trials 1` for a smoke run.
@@ -148,9 +151,11 @@ pwsh -NoProfile -File .\Verify.ps1
 - [`Test-GgmlCpuFactoryInterception.ps1`](Test-GgmlCpuFactoryInterception.ps1) — catch stock CPU backend instances as their public device factory creates them.
 - [`Test-GgmlRuntimeBackendRegistration.ps1`](Test-GgmlRuntimeBackendRegistration.ps1) — emit four ggml GPU devices and device-owned host fitting buckets in memory.
 - [`Verify.ps1`](Verify.ps1) — run the integrated proof suite and write fresh receipts.
+- [`Prepare-AmdPro22Q4V340L.ps1`](Prepare-AmdPro22Q4V340L.ps1) — verify AMD's pinned 22.Q4 package and prepare the exact `REV_05` INF without touching Windows policy or drivers.
 - [`src/New-WindowsFunctionPointerBinder.ps1`](src/New-WindowsFunctionPointerBinder.ps1) — native C-ABI function-pointer binding used by the PowerShell probes.
 - [`VulkanProofs/`](VulkanProofs/) — quarantined transport evidence and historical benchmark receipts.
 - [`docs/WINDOWS-ENABLEMENT-ROADMAP.md`](docs/WINDOWS-ENABLEMENT-ROADMAP.md) — evidence-gated driver, HBCC, INF, and PowerPlay work planned after compute execution.
+- [`docs/AMD-PRO-22Q4-V340L.md`](docs/AMD-PRO-22Q4-V340L.md) — official package identity, proven INF delta, catalog-signing requirements, and the gated two-reboot workflow.
 
 ## Scope discipline
 
