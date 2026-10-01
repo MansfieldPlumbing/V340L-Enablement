@@ -1,0 +1,51 @@
+{
+  "Status": "PASS",
+  "Scope": "StandaloneProducerPublicationBoundedVerification",
+  "PublisherModule": "C:\\dev\\V340L-Emancipated\\scratch\\antigravity-publisher-20261001\\Antigravity.ProducerPublisher.dll",
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ProducerDevice": {
+    "Name": "Vulkan0",
+    "Desc": "Radeon Pro V340L 22Q4",
+    "VkDevice": "0x22AC7967DE0",
+    "ComputeQueue": "0x22AC796FEB0",
+    "ComputeQueueFamily": 1,
+    "TransferQueue": "0x22AC796FFA0",
+    "TransferQueueFamily": 2,
+    "ApertureVkBuffer": "0x22A83397F40",
+    "D3D12FenceSemaphore": "0x22AF95FB970"
+  },
+  "ConsumerDevice": {
+    "Name": "Vulkan1",
+    "Desc": "Radeon Pro V340L 22Q4",
+    "VkDevice": "0x22AF954F590",
+    "ComputeQueue": "0x22AF9557660",
+    "ComputeQueueFamily": 1,
+    "ApertureVkBuffer": "0x22A83398D40",
+    "D3D12FenceSemaphore": "0x22AF95FCF60"
+  },
+  "Execution": {
+    "PublicationValue": 1,
+    "PublishedRegionsCount": 22,
+    "DataRegionsCount": 21,
+    "TotalWordsExamined": 5376,
+    "TotalWordsExpected": 5376,
+    "Mismatches": 0,
+    "ErrorFlags": 0,
+    "NativeFenceCompletedValue": 1,
+    "ConsumerWaitRequirement": {
+      "D3D12Semaphore": "0x22AF95FB970",
+      "PublicationValue": 1,
+      "WaitStageMask": "0x20",
+      "Status": 0
+    }
+  },
+  "Timings": {
+    "ConsumerSubmitMilliseconds": 3.6011,
+    "ProducerGenSubmitMilliseconds": 2.0138,
+    "ProducerPublishMilliseconds": 2.8132,
+    "TotalHostSubmissionMilliseconds": 8.4787,
+    "TerminalFenceWaitMilliseconds": 3.1449
+  },
+  "ZeroCpuSyncVerified": true,
+  "TimestampUtc": "2026-10-01T09:06:55.0382054Z"
+}

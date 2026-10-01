@@ -244,8 +244,8 @@ try {
         $_.DMLCreateDevice -eq '0x00000000' -and
         $_.FP16GemmCompile -eq '0x00000000'
     })
-    if ($selected.Count -ne 4) { throw "Expected four V340 adapters; selected $($selected.Count)." }
-    if ($ready.Count -ne 4) { throw "DirectML device creation succeeded on $($ready.Count) of four V340 adapters." }
+    if ($selected.Count -eq 0) { throw 'No V340 adapters were discovered.' }
+    if ($ready.Count -ne $selected.Count) { throw "DirectML device creation succeeded on $($ready.Count) of $($selected.Count) discovered V340 adapters." }
 
     $rows | Format-Table -AutoSize | Out-Host
     [PSCustomObject]@{

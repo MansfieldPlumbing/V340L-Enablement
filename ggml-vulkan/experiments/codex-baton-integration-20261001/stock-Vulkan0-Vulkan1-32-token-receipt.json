@@ -1,0 +1,6 @@
+{
+  "ExitCode": 0,
+  "DeviceSelection": "Vulkan0,Vulkan1",
+  "RequestedTokens": 32,
+  "Mutation": false
+}

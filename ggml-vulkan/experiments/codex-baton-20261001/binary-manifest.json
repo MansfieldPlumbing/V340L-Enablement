@@ -1,0 +1,182 @@
+[
+  {
+    "Name": "ggml-base.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-base.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-base.dll",
+    "SHA256": "9E1C1E8C3C35975C4C8A7A9736F24BD4BDFFC2E2D158913AA4FDD0C49BC1B52B"
+  },
+  {
+    "Name": "ggml-cpu-alderlake.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-alderlake.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-alderlake.dll",
+    "SHA256": "DB92E21097E4DE77EDB23C20EF208653AB083924209CD38FE0AAB972B70C18D9"
+  },
+  {
+    "Name": "ggml-cpu-cannonlake.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-cannonlake.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-cannonlake.dll",
+    "SHA256": "3E08B1DA15118758E9FA2F47CEC3FE8495C90B0656F27A058D3E015261D7DBA8"
+  },
+  {
+    "Name": "ggml-cpu-cascadelake.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-cascadelake.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-cascadelake.dll",
+    "SHA256": "4766BFBE6CA598115056266411405349E4CCE21AE891B69FF95E77ED4F2E5771"
+  },
+  {
+    "Name": "ggml-cpu-cooperlake.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-cooperlake.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-cooperlake.dll",
+    "SHA256": "BFA023E29AA1A956021C86C1512B0B7BBE23FB8DDEB9B0B166C020961A62D9B9"
+  },
+  {
+    "Name": "ggml-cpu-haswell.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-haswell.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-haswell.dll",
+    "SHA256": "3C8E43AF61B7762DDC22C0A9D0B70209BF499C43B015AE59638ECE68EAC1FE87"
+  },
+  {
+    "Name": "ggml-cpu-icelake.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-icelake.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-icelake.dll",
+    "SHA256": "C9C3C46F4A31B52AE799E722E4D40E94BBE06D4A1099524D305EC9466B77FDEE"
+  },
+  {
+    "Name": "ggml-cpu-ivybridge.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-ivybridge.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-ivybridge.dll",
+    "SHA256": "4FF18D1C4D34828A1233BFE6232F416F2C0A87D443DDD9C85E47AFC66F652A23"
+  },
+  {
+    "Name": "ggml-cpu-piledriver.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-piledriver.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-piledriver.dll",
+    "SHA256": "2BBD2270A276F04B5EB416522013B2FE9E80725E312E95C3E915CA9B2B184A97"
+  },
+  {
+    "Name": "ggml-cpu-sandybridge.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-sandybridge.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-sandybridge.dll",
+    "SHA256": "508EB108735F2773BA3E08FCE0595470C0507E87425E30E8FB7F89BC2D743A41"
+  },
+  {
+    "Name": "ggml-cpu-sapphirerapids.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-sapphirerapids.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-sapphirerapids.dll",
+    "SHA256": "F00EAA45F0A84872B04851B1DE8FC719F58E8FA928CF961FD1B9BC5EFE0175B5"
+  },
+  {
+    "Name": "ggml-cpu-skylakex.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-skylakex.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-skylakex.dll",
+    "SHA256": "89881559767A25E58A931CA0A0C5C9254F59425EA9FDA5A78BDED7A145241C75"
+  },
+  {
+    "Name": "ggml-cpu-sse42.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-sse42.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-sse42.dll",
+    "SHA256": "473D32955B38BCD6A7DE26B24140D56CB453AF8C0477A44FEC019D2C4537BEAE"
+  },
+  {
+    "Name": "ggml-cpu-x64.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-x64.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-x64.dll",
+    "SHA256": "ECAB7F100029F63D10B1B9201750AE501741B1FDF0C99A95F4B9EECD4E341D65"
+  },
+  {
+    "Name": "ggml-cpu-zen4.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-cpu-zen4.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-zen4.dll",
+    "SHA256": "AD9C128B09701BA54BD1F1DCB0063262466DD23A1A87C638A5184785D2187334"
+  },
+  {
+    "Name": "ggml-rpc.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-rpc.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-rpc.dll",
+    "SHA256": "7EF76252FCF8EBEF103EEA8197B5E1FB47CBD09DD6D7DADCE2789C0E155830C8"
+  },
+  {
+    "Name": "ggml-vulkan.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml-vulkan.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-vulkan.dll",
+    "SHA256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E"
+  },
+  {
+    "Name": "ggml.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\ggml.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml.dll",
+    "SHA256": "EC561D35FAA15BC0621B19363FEDFB493FC4B468383D8E46FA70ECF98A76CC67"
+  },
+  {
+    "Name": "libomp.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\libomp.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\libomp.dll",
+    "SHA256": "A12116BA72D1D6820407CF30BE23DA04CE79D6BB8A71A5EE71759C5A1FAA6F1C"
+  },
+  {
+    "Name": "llama-batched-bench-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-batched-bench-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-batched-bench-impl.dll",
+    "SHA256": "8EE52EC3022FBD0B88CC539A9ADC8DABA4F8ABC5E5410D2AB73C89F6ABA78EA3"
+  },
+  {
+    "Name": "llama-bench-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-bench-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-bench-impl.dll",
+    "SHA256": "DDBD0A058E759AEEA6AF5450BCD1E11B246E3519E96D76A24166C098B2E6C0FB"
+  },
+  {
+    "Name": "llama-cli-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-cli-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-cli-impl.dll",
+    "SHA256": "01A60499B53CE3545DFA113725465AB25DBB9170537C038144ECB35DD881FA8D"
+  },
+  {
+    "Name": "llama-common.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-common.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-common.dll",
+    "SHA256": "5CFDD6525E041C2822CF518445677354C025366DCCF3A6E37A662FBD2AD43F1D"
+  },
+  {
+    "Name": "llama-completion-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-completion-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-completion-impl.dll",
+    "SHA256": "5638BC05FECD448E4F8250A545253FABBCDC68444C1666EED36A11D07D14D83A"
+  },
+  {
+    "Name": "llama-fit-params-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-fit-params-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-fit-params-impl.dll",
+    "SHA256": "F2B8416B6E8414FAB1EB5524270FD57DC9EE9803DAE033DA49725663C89A60E1"
+  },
+  {
+    "Name": "llama-perplexity-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-perplexity-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-perplexity-impl.dll",
+    "SHA256": "78938062B2497F995C2D4AC603C72DFF87A5B1194057BC2C625621929733E798"
+  },
+  {
+    "Name": "llama-quantize-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-quantize-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-quantize-impl.dll",
+    "SHA256": "6DB5C779F3AA3971B673099182A6FDCD37F309EE10A635FE09D0990A1991A76D"
+  },
+  {
+    "Name": "llama-server-impl.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama-server-impl.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-server-impl.dll",
+    "SHA256": "0630A08A5E379DCE6F5318CDAA39FDE0AF97C922D16D3572046B8769FF9CF00D"
+  },
+  {
+    "Name": "llama.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\llama.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama.dll",
+    "SHA256": "EF0E164D6849EA770CD7211ECFE1FAE210F9A36A03E15D96ED0D7C452C19D649"
+  },
+  {
+    "Name": "mtmd.dll",
+    "Source": "C:\\dev\\V340L-Emancipated\\runtime-stock\\mtmd.dll",
+    "Snapshot": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\mtmd.dll",
+    "SHA256": "3E5322059301D694ED83D0B72382B55A6561E885E920D08FD1CBBB61BF75FE5C"
+  }
+]

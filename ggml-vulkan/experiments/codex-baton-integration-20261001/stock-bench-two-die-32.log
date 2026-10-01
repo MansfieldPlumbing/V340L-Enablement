@@ -1,0 +1,57 @@
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Quadro P2000",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "f16",
+    "type_v": "f16",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": -1,
+    "devices": "Vulkan0/Vulkan1",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": false,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 32,
+    "n_depth": 0,
+    "test_time": "2026-10-01T10:59:12Z",
+    "avg_ns": 1547977900,
+    "stddev_ns": 0,
+    "avg_ts": 20.672130,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1547977900 ],
+    "samples_ts": [ 20.6721 ]
+  }
+]

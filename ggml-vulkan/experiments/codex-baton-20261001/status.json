@@ -1,0 +1,14 @@
+{
+  "Status": "AUDITED_NOT_INFERENCE_COMPLETE",
+  "Goal": "Remove CPU synchronization stalls in coherent multi-die layer-split decode",
+  "Runtime": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime",
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "BackendInitNativeTests": "PASS",
+  "FirstCopyEntryAuditExit": 86,
+  "FirstStockCopyRecordAuditExit": 88,
+  "StopsWereIntentional": true,
+  "FullInferenceCompleted": false,
+  "BoundaryPublicationVerified": false,
+  "OriginalAntigravitySourcesEdited": false,
+  "NextTask": "docs\\antigravity-bounded-producer-publication-20261001.md"
+}

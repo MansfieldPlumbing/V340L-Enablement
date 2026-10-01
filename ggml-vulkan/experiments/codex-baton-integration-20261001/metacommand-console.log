@@ -1,0 +1,27 @@
+CENSUS: create factory
+CENSUS: enumerate adapter 0
+CENSUS: create device Radeon Pro V340L 22Q4
+CENSUS: QueryInterface device5
+CENSUS: enumerate metacommands
+Fatal error.
+0xC0000005
+   at DynamicClass.CallSite.Target(System.Runtime.CompilerServices.Closure, System.Runtime.CompilerServices.CallSite, System.Object, System.Object, System.Object, IntPtr)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute4[[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]](System.Runtime.CompilerServices.CallSite, System.__Canon, System.__Canon, System.__Canon, IntPtr)
+   at System.Management.Automation.Interpreter.DynamicInstruction`5[[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.IntPtr, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]].Run(System.Management.Automation.Interpreter.InterpretedFrame)
+Repeated 8 times:
+--------------------------------
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(System.Management.Automation.Interpreter.InterpretedFrame)
+--------------------------------
+   at System.Management.Automation.Interpreter.Interpreter.Run(System.Management.Automation.Interpreter.InterpretedFrame)
+   at System.Management.Automation.Interpreter.LightLambda.RunVoid1[[System.__Canon, System.Private.CoreLib, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]](System.__Canon)
+   at System.Management.Automation.DlrScriptCommandProcessor.RunClause(System.Action`1<System.Management.Automation.Language.FunctionContext>, System.Object, System.Object)
+   at System.Management.Automation.DlrScriptCommandProcessor.Complete()
+   at System.Management.Automation.CommandProcessorBase.DoComplete()
+   at System.Management.Automation.Internal.PipelineProcessor.DoCompleteCore(System.Management.Automation.CommandProcessorBase)
+   at System.Management.Automation.Internal.PipelineProcessor.SynchronousExecuteEnumerate(System.Object)
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeHelper()
+   at System.Management.Automation.Runspaces.LocalPipeline.InvokeThreadProc()
+   at System.Management.Automation.Runspaces.PipelineThread.WorkerProc()
+   at System.Threading.Thread+StartHelper.Callback(System.Object)
+   at System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
+   at System.Threading.Thread.StartCallback(System.Threading.Thread*)

@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "ggml-vulkan.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-vulkan.dll",
+    "SHA256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E"
+  },
+  {
+    "Name": "ggml-base.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-base.dll",
+    "SHA256": "9E1C1E8C3C35975C4C8A7A9736F24BD4BDFFC2E2D158913AA4FDD0C49BC1B52B"
+  },
+  {
+    "Name": "libomp.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\libomp.dll",
+    "SHA256": "A12116BA72D1D6820407CF30BE23DA04CE79D6BB8A71A5EE71759C5A1FAA6F1C"
+  },
+  {
+    "Name": "ggml.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml.dll",
+    "SHA256": "EC561D35FAA15BC0621B19363FEDFB493FC4B468383D8E46FA70ECF98A76CC67"
+  },
+  {
+    "Name": "llama-cli-impl.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-cli-impl.dll",
+    "SHA256": "01A60499B53CE3545DFA113725465AB25DBB9170537C038144ECB35DD881FA8D"
+  },
+  {
+    "Name": "llama-common.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-common.dll",
+    "SHA256": "5CFDD6525E041C2822CF518445677354C025366DCCF3A6E37A662FBD2AD43F1D"
+  },
+  {
+    "Name": "llama-server-impl.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama-server-impl.dll",
+    "SHA256": "0630A08A5E379DCE6F5318CDAA39FDE0AF97C922D16D3572046B8769FF9CF00D"
+  },
+  {
+    "Name": "llama.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\llama.dll",
+    "SHA256": "EF0E164D6849EA770CD7211ECFE1FAE210F9A36A03E15D96ED0D7C452C19D649"
+  },
+  {
+    "Name": "mtmd.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\mtmd.dll",
+    "SHA256": "3E5322059301D694ED83D0B72382B55A6561E885E920D08FD1CBBB61BF75FE5C"
+  },
+  {
+    "Name": "ggml-rpc.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-rpc.dll",
+    "SHA256": "7EF76252FCF8EBEF103EEA8197B5E1FB47CBD09DD6D7DADCE2789C0E155830C8"
+  },
+  {
+    "Name": "ggml-cpu-skylakex.dll",
+    "Path": "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-20261001\\runtime\\ggml-cpu-skylakex.dll",
+    "SHA256": "89881559767A25E58A931CA0A0C5C9254F59425EA9FDA5A78BDED7A145241C75"
+  }
+]

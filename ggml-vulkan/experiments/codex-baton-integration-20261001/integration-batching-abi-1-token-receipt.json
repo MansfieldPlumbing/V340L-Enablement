@@ -1,0 +1,172 @@
+{
+  "PublicationCount": 4,
+  "PendingCount": 0,
+  "HandledCopies": 84,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 8,
+  "SourceGraphs": 4,
+  "DestinationGraphs": 4,
+  "AllowedSyncs": 32,
+  "EventRecordCount": 4,
+  "DeferredCompletedEventCleanups": 0,
+  "NativeWaitAudit": {
+    "BoundaryWaitRequests": 0,
+    "ResolveHits": 10,
+    "WaitForFencesCalls": 100,
+    "WaitSemaphoresCalls": 0,
+    "QueueWaitIdleCalls": 0,
+    "DeviceWaitIdleCalls": 0,
+    "WaitForFencesProfileCalls": 92,
+    "WaitSemaphoresProfileCalls": 0,
+    "QueueWaitIdleProfileCalls": 0,
+    "DeviceWaitIdleProfileCalls": 0,
+    "SourceDispatchCalls": 2035,
+    "ConsumerDispatchCalls": 1474,
+    "SourceIndirectDispatchCalls": 0,
+    "ConsumerIndirectDispatchCalls": 0,
+    "SourceSubmitCalls": 57,
+    "ConsumerSubmitCalls": 50,
+    "WaitForFencesMilliseconds": 200.0602,
+    "WaitSemaphoresMilliseconds": 0.0,
+    "QueueWaitIdleMilliseconds": 0.0,
+    "DeviceWaitIdleMilliseconds": 0.0,
+    "SourceWorkgroups": 747244,
+    "ConsumerWorkgroups": 780113,
+    "SourceSubmitMilliseconds": 28.5278,
+    "ConsumerSubmitMilliseconds": 28.4726
+  },
+  "WaitPhaseAudit": {
+    "WaitForFencesPhase0": {
+      "Calls": 92,
+      "Milliseconds": 200.0669
+    },
+    "WaitForFencesPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitForFencesPhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitForFencesPhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase0": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase0": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase0": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "GetFenceStatusPhase0": {
+      "Calls": 1323,
+      "Milliseconds": 1.1302
+    },
+    "GetFenceStatusPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "GetFenceStatusPhase2": {
+      "Calls": 1049,
+      "Milliseconds": 1.0485
+    },
+    "GetFenceStatusPhase3": {
+      "Calls": 535,
+      "Milliseconds": 0.3992
+    }
+  },
+  "CpuCallTimings": {
+    "SourceGraphMilliseconds": 112.311,
+    "ConsumerGraphMilliseconds": 84.2562,
+    "PublicationMilliseconds": 75.3808
+  },
+  "DeviceSelection": "Vulkan0,Vulkan1",
+  "DummyTensorOverride": false,
+  "Arguments": [
+    "llama-cli.exe",
+    "-m",
+    "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "-ngl",
+    "999",
+    "-dev",
+    "Vulkan0,Vulkan1",
+    "-sm",
+    "layer",
+    "-ts",
+    "1,1",
+    "-c",
+    "512",
+    "-p",
+    "The capital of France is",
+    "-n",
+    "1",
+    "-s",
+    "1234",
+    "--temp",
+    "0",
+    "--ignore-eos",
+    "--perf",
+    "--no-warmup",
+    "--simple-io",
+    "--single-turn",
+    "--no-display-prompt",
+    "--log-file",
+    "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-integration-20261001\\integration-batching-abi-native.log"
+  ],
+  "QueueFamilies": {
+    "Source": {
+      "Compute": 1,
+      "Transfer": 2
+    },
+    "Consumer": {
+      "Compute": 1,
+      "Transfer": 2
+    }
+  },
+  "ExitCode": 0,
+  "RequestedTokens": 1,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 710656
+}

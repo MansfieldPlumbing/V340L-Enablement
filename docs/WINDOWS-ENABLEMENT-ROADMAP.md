@@ -1,3 +1,5 @@
+> Historical enablement proposals. HBCC and registry-policy ideas below are not verified enablement features. The current supported scope and checks are in the root README.
+
 # Windows enablement roadmap
 
 The 22.Q4 package-identification and `REV_03` to `REV_05` preparation stage is now evidence-backed. Privileged signing, boot-policy, installation, and reboot automation remains gated.

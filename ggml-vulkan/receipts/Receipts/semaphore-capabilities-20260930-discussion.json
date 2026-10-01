@@ -1,0 +1,172 @@
+[
+  {
+    "PhysicalOrdinal": 1,
+    "Name": "Radeon Pro V340L 22Q4",
+    "DriverVersion": 8388841,
+    "Extensions": [
+      "VK_KHR_external_semaphore",
+      "VK_KHR_external_semaphore_win32",
+      "VK_KHR_timeline_semaphore",
+      "VK_KHR_vulkan_memory_model",
+      "VK_EXT_external_memory_host"
+    ],
+    "QueueFamilies": [
+      {
+        "Family": 0,
+        "Flags": 15,
+        "Count": 1
+      },
+      {
+        "Family": 1,
+        "Flags": 14,
+        "Count": 2
+      },
+      {
+        "Family": 2,
+        "Flags": 12,
+        "Count": 2
+      }
+    ],
+    "Semaphores": [
+      {
+        "Kind": "Binary",
+        "Handle": "OPAQUE_WIN32",
+        "Features": 3,
+        "Exportable": true,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 2,
+        "CompatibleHandleTypes": 2
+      },
+      {
+        "Kind": "Binary",
+        "Handle": "OPAQUE_WIN32_KMT",
+        "Features": 3,
+        "Exportable": true,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 4,
+        "CompatibleHandleTypes": 4
+      },
+      {
+        "Kind": "Binary",
+        "Handle": "D3D12_FENCE",
+        "Features": 2,
+        "Exportable": false,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 8,
+        "CompatibleHandleTypes": 8
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "OPAQUE_WIN32",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "OPAQUE_WIN32_KMT",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "D3D12_FENCE",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      }
+    ]
+  },
+  {
+    "PhysicalOrdinal": 2,
+    "Name": "Radeon Pro V340L 22Q4",
+    "DriverVersion": 8388841,
+    "Extensions": [
+      "VK_KHR_external_semaphore",
+      "VK_KHR_external_semaphore_win32",
+      "VK_KHR_timeline_semaphore",
+      "VK_KHR_vulkan_memory_model",
+      "VK_EXT_external_memory_host"
+    ],
+    "QueueFamilies": [
+      {
+        "Family": 0,
+        "Flags": 15,
+        "Count": 1
+      },
+      {
+        "Family": 1,
+        "Flags": 14,
+        "Count": 2
+      },
+      {
+        "Family": 2,
+        "Flags": 12,
+        "Count": 2
+      }
+    ],
+    "Semaphores": [
+      {
+        "Kind": "Binary",
+        "Handle": "OPAQUE_WIN32",
+        "Features": 3,
+        "Exportable": true,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 2,
+        "CompatibleHandleTypes": 2
+      },
+      {
+        "Kind": "Binary",
+        "Handle": "OPAQUE_WIN32_KMT",
+        "Features": 3,
+        "Exportable": true,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 4,
+        "CompatibleHandleTypes": 4
+      },
+      {
+        "Kind": "Binary",
+        "Handle": "D3D12_FENCE",
+        "Features": 2,
+        "Exportable": false,
+        "Importable": true,
+        "ExportFromImportedHandleTypes": 8,
+        "CompatibleHandleTypes": 8
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "OPAQUE_WIN32",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "OPAQUE_WIN32_KMT",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      },
+      {
+        "Kind": "Timeline",
+        "Handle": "D3D12_FENCE",
+        "Features": 0,
+        "Exportable": false,
+        "Importable": false,
+        "ExportFromImportedHandleTypes": 0,
+        "CompatibleHandleTypes": 0
+      }
+    ]
+  }
+]

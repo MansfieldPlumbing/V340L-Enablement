@@ -1,0 +1,118 @@
+=== V340L Stock llama.cpp GPU Hardware Baton Launcher ===
+[1/7] Validating stock binaries and runtime directory...
+  [+] Stock Vulkan DLL verified: AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E
+  [+] Model file verified: C:\Models\gemma-4-E4B-it-Q4_K_M.gguf (4.64 GB)
+[2/7] Emitting and loading V340L-LlamaBatonShim.dll...
+Emitted assembly successfully saved to: C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\V340L-LlamaBatonShim.dll (5120 bytes)
+  [+] Lowered managed assembly loaded successfully.
+[3/7] Setting up D3D12 cross-adapter fence...
+  [+] Die 0 DXGI: Radeon Pro V340L 22Q4 (LUID: E9FC010000000000)
+  [+] Die 1 DXGI: Radeon Pro V340L 22Q4 (LUID: C370020000000000)
+  [+] D3D12 cross-adapter shared handle: 0x18F0
+[4/7] Allocating permanent pinned host aperture arena...
+  [+] Allocated 32 MiB aperture arena at 0x23344C00000
+[5/7] Patching stock ggml-vulkan.dll IAT to intercept vkCreateDevice...
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.NativeWaitAudit.dll
+NATIVE_AUDIT: procedure-resolution guards installed before Vulkan device creation.
+  [+] IAT hook installed on stock ggml-vulkan.dll: 0x7FFFB51A0568 -> 0x7FF7D32FB438
+[6/7] Initializing backends and importing hardware baton...
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+  [+] Stock Vulkan initialized through IAT hook (0 devices created with VK_KHR_external_semaphore_win32).
+  [+] Producer Device: Vulkan0 (Radeon Pro V340L 22Q4)
+  [+] Consumer Device: Vulkan1 (Radeon Pro V340L 22Q4)
+  [+] Imported aperture buffer on Die 0: 0x233036804C0
+  [+] Imported aperture buffer on Die 1: 0x2330367F640
+  [+] Source bridge tensor allocated in aperture.
+  [+] Die 0 VkDevice: 0x233653F7970
+  [+] Die 1 VkDevice: 0x2336538CA80
+  [+] Imported D3D12 fence semaphore on Die 0: 0x23364EF6BB0 (Queue: 0x233653FFA40)
+  [+] Imported D3D12 fence semaphore on Die 1: 0x23364EF5800 (Queue: 0x23365394B50)
+  [+] Hooked cpy_tensor_async on Consumer Backend: 0x233028E43A8 -> 0x7FF7D32FB468
+  [+] Hooked init_backend on Device 0: 0x23364DB2D98 -> 0x7FF7D32FB480
+  [+] Hooked init_backend on Device 1: 0x23364DB2EB8 -> 0x7FF7D32FB498
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.BatonRuntime.dll
+BATON: preallocated 40 distinct publisher/return command resources.
+BATON: starting deterministic inference with default F16 KV.
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11223-4da633776
+model      : C:\Models\gemma-4-E4B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> The capital of France is
+Paris. 🇫🇷✨ (It's a beautiful city!) 😊</blockquote>
+
+***
+
+*If you have any other questions about France, Paris, or
+{
+  "PublicationCount": 35,
+  "PendingCount": 0,
+  "HandledCopies": 735,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 70,
+  "SourceGraphs": 35,
+  "DestinationGraphs": 35,
+  "AllowedSyncs": 526,
+  "EventRecordCount": 4,
+  "DeferredCompletedEventCleanups": 248,
+  "NativeWaitAudit": {
+    "BoundaryWaitRequests": 0,
+    "ResolveHits": 6,
+    "WaitForFencesCalls": 162,
+    "WaitSemaphoresCalls": 217,
+    "QueueWaitIdleCalls": 0,
+    "DeviceWaitIdleCalls": 0,
+    "WaitForFencesProfileCalls": 154,
+    "WaitSemaphoresProfileCalls": 217,
+    "QueueWaitIdleProfileCalls": 0,
+    "DeviceWaitIdleProfileCalls": 0,
+    "WaitForFencesMilliseconds": 1270.6509,
+    "WaitSemaphoresMilliseconds": 1.3148,
+    "QueueWaitIdleMilliseconds": 0.0,
+    "DeviceWaitIdleMilliseconds": 0.0
+  },
+  "CpuCallTimings": {
+    "SourceGraphMilliseconds": 143.3767,
+    "ConsumerGraphMilliseconds": 107.3026,
+    "PublicationMilliseconds": 184.5352
+  },
+  "DeviceSelection": "Vulkan0,Vulkan1",
+  "ExitCode": 0,
+  "RequestedTokens": 32,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 1662976
+}
+
+[ Prompt: 47.0 t/s | Generation: 21.7 t/s ]
+
+
+Exiting...

@@ -1,0 +1,19 @@
+{
+  "Status": "PASS",
+  "ProducerOrdinal": 0,
+  "ConsumerOrdinal": 2,
+  "ProducerLUID": "E9FC010000000000",
+  "ConsumerLUID": "324A020000000000",
+  "NativeFenceCompletedValue": 1,
+  "ErrorFlags": 0,
+  "Mismatches": 0,
+  "FirstBadWord": 4294967295,
+  "ObservedSequence": 1,
+  "ObservedRegionCount": 21,
+  "ExaminedWords": 5376,
+  "ExpectedWords": 5376,
+  "ConsumerSubmitMilliseconds": 3.9879,
+  "ProducerSubmitMilliseconds": 2.9941,
+  "TotalPipelineMilliseconds": 3.0462,
+  "TimestampUtc": "2026-10-01T05:05:06.2258259Z"
+}

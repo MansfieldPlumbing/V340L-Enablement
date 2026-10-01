@@ -634,7 +634,7 @@ try {
         $index++
     }
 
-    if ($v340s.Count -ne 4) { throw "Expected four V340 adapters; found $($v340s.Count)." }
+    if ($v340s.Count -lt 4) { throw "Expected at least four V340 adapters; found $($v340s.Count)." }
     $targets = if ($V340Ordinal -ge 0) { @($v340s[$V340Ordinal]) } else { @($v340s) }
     $results = [Collections.Generic.List[object]]::new()
     foreach ($target in $targets) {

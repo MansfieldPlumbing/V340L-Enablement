@@ -1,0 +1,1240 @@
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:02Z",
+    "avg_ns": 1267909000,
+    "stddev_ns": 0,
+    "avg_ts": 403.814469,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1267909000 ],
+    "samples_ts": [ 403.814 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:05Z",
+    "avg_ns": 6362794500,
+    "stddev_ns": 0,
+    "avg_ts": 20.116947,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 6362794500 ],
+    "samples_ts": [ 20.1169 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=2751
+[probe] layer-output copies routed through aperture=131 byteExact=True
+[probe] routed through backend cpy_tensor_async +0x38=131
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=262
+[probe] routed_payload_bytes=5242880 count=2
+[probe] routed_payload_bytes=10240 count=129
+[probe] bytes=5242880 avg_prior_backend_sync_us=626267.400 avg_source_to_aperture_us=631.700 avg_aperture_to_destination_us=2333.250 avg_sync_plus_two_leg_handoff_us=629232.350 avg_complete_route_callback_us=631682.350
+[probe] bytes=10240 avg_prior_backend_sync_us=21510.844 avg_source_to_aperture_us=147.979 avg_aperture_to_destination_us=156.285 avg_sync_plus_two_leg_handoff_us=21815.109 avg_complete_route_callback_us=21824.650
+[copy] buffer=0x1FCAD380F80 src=Vulkan2#l_out-21#0 dst=Vulkan2#l_out-21#0 bytes=5242880 srcbuf=0x1FCAD381F00 dstbuf=0x1FCAD380F80 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1FC84B60C90->0x1FCAD380F80; byteExact=True
+[copy] buffer=0x1FCAD380F80 src=Vulkan2#l_out-21#0 dst=Vulkan2#l_out-21#0 bytes=5242880 srcbuf=0x1FCAD381F00 dstbuf=0x1FCAD380F80 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1FC84B60C90->0x1FCAD380F80; byteExact=True
+[copy] buffer=0x1FCAD382280 src=Vulkan2#l_out-21#0 dst=Vulkan2#l_out-21#0 bytes=10240 srcbuf=0x1FCAD381F00 dstbuf=0x1FCAD382280 stockCpy=True
+[copy] ASYNC-ROUTED 10240 bytes 0x1FCAD380E00->0x1FCAD382280; byteExact=True
+[copy] buffer=0x1FCAD382280 src=Vulkan2#l_out-21#0 dst=Vulkan2#l_out-21#0 bytes=10240 srcbuf=0x1FCAD381F00 dstbuf=0x1FCAD382280 stockCpy=True
+[copy] ASYNC-ROUTED 10240 bytes 0x1FCAD380E00->0x1FCAD382280; byteExact=True
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:19Z",
+    "avg_ns": 1267871800,
+    "stddev_ns": 0,
+    "avg_ts": 403.826317,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1267871800 ],
+    "samples_ts": [ 403.826 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:22Z",
+    "avg_ns": 6328899700,
+    "stddev_ns": 0,
+    "avg_ts": 20.224685,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 6328899700 ],
+    "samples_ts": [ 20.2247 ]
+  }[probe] warmup llama_bench return=0
+
+]
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:32Z",
+    "avg_ns": 1269563400,
+    "stddev_ns": 3270090,
+    "avg_ts": 403.290035,
+    "stddev_ts": 1.040262,
+    "samples_ns": [ 1271756900, 1265804900, 1271128400 ],
+    "samples_ts": [ 402.593, 404.486, 402.792 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:54:37Z",
+    "avg_ns": 6334954300,
+    "stddev_ns": 31795154,
+    "avg_ts": 20.205693,
+    "stddev_ts": 0.101120,
+    "samples_ns": [ 6315842900, 6371657700, 6317362300 ],
+    "samples_ts": [ 20.2665, 20.089, 20.2616 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=8169
+[probe] layer-output copies routed through aperture=389 byteExact=False
+[probe] routed through backend cpy_tensor_async +0x38=389
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=0
+[probe] routed_payload_bytes=5242880 count=4
+[probe] routed_payload_bytes=10240 count=385
+[probe] bytes=5242880 avg_prior_backend_sync_us=648084.250 avg_source_to_aperture_us=600.700 avg_aperture_to_destination_us=803.700 avg_sync_plus_two_leg_handoff_us=649488.650 avg_complete_route_callback_us=649502.450
+[probe] bytes=10240 avg_prior_backend_sync_us=21614.475 avg_source_to_aperture_us=140.154 avg_aperture_to_destination_us=140.514 avg_sync_plus_two_leg_handoff_us=21895.143 avg_complete_route_callback_us=21902.502
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2,Vulkan3
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:55:25Z",
+    "avg_ns": 1277493300,
+    "stddev_ns": 0,
+    "avg_ts": 400.784881,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1277493300 ],
+    "samples_ts": [ 400.785 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:55:28Z",
+    "avg_ns": 7991874300,
+    "stddev_ns": 0,
+    "avg_ts": 16.016268,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 7991874300 ],
+    "samples_ts": [ 16.0163 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=7205
+[probe] layer-output copies routed through aperture=262 byteExact=True
+[probe] routed through backend cpy_tensor_async +0x38=262
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=524
+[probe] routed_payload_bytes=5242880 count=4
+[probe] routed_payload_bytes=10240 count=258
+[probe] bytes=5242880 avg_prior_backend_sync_us=392856.550 avg_source_to_aperture_us=656.925 avg_aperture_to_destination_us=2140.825 avg_sync_plus_two_leg_handoff_us=395654.300 avg_complete_route_callback_us=397127.925
+[probe] bytes=10240 avg_prior_backend_sync_us=16735.781 avg_source_to_aperture_us=134.051 avg_aperture_to_destination_us=133.121 avg_sync_plus_two_leg_handoff_us=17002.953 avg_complete_route_callback_us=17009.501
+[copy] buffer=0x129000A8EE0 src=Vulkan2#l_out-14#0 dst=Vulkan2#l_out-14#0 bytes=5242880 srcbuf=0x129000A86E0 dstbuf=0x129000A8EE0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x129000A8E60->0x129000A8EE0; byteExact=True
+[copy] buffer=0x129000A8AE0 src=Vulkan3#l_out-28#0 dst=Vulkan3#l_out-28#0 bytes=5242880 srcbuf=0x129000A89E0 dstbuf=0x129000A8AE0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x129000A8EE0->0x129000A8AE0; byteExact=True
+[copy] buffer=0x129000A8EE0 src=Vulkan2#l_out-14#0 dst=Vulkan2#l_out-14#0 bytes=5242880 srcbuf=0x129000A86E0 dstbuf=0x129000A8EE0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x129000A8E60->0x129000A8EE0; byteExact=True
+[copy] buffer=0x129000A8AE0 src=Vulkan3#l_out-28#0 dst=Vulkan3#l_out-28#0 bytes=5242880 srcbuf=0x129000A89E0 dstbuf=0x129000A8AE0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x129000A8EE0->0x129000A8AE0; byteExact=True
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2,Vulkan3
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:55:44Z",
+    "avg_ns": 1279800100,
+    "stddev_ns": 0,
+    "avg_ts": 400.062479,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1279800100 ],
+    "samples_ts": [ 400.062 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:55:47Z",
+    "avg_ns": 7981597100,
+    "stddev_ns": 0,
+    "avg_ts": 16.036891,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 7981597100 ],
+    "samples_ts": [ 16.0369 ]
+  }[probe] warmup llama_bench return=0
+
+]
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:55:59Z",
+    "avg_ns": 1280771433,
+    "stddev_ns": 3199804,
+    "avg_ts": 399.760737,
+    "stddev_ts": 0.999650,
+    "samples_ns": [ 1281672900, 1283423600, 1277217800 ],
+    "samples_ts": [ 399.478, 398.933, 400.871 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3",
+    "tensor_split": "1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:56:04Z",
+    "avg_ns": 8026288266,
+    "stddev_ns": 6026775,
+    "avg_ts": 15.947602,
+    "stddev_ts": 0.011967,
+    "samples_ns": [ 8022125900, 8033197700, 8023541200 ],
+    "samples_ts": [ 15.9559, 15.9339, 15.9531 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=21395
+[probe] layer-output copies routed through aperture=778 byteExact=False
+[probe] routed through backend cpy_tensor_async +0x38=778
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=0
+[probe] routed_payload_bytes=5242880 count=8
+[probe] routed_payload_bytes=10240 count=770
+[probe] bytes=5242880 avg_prior_backend_sync_us=412945.213 avg_source_to_aperture_us=600.362 avg_aperture_to_destination_us=814.525 avg_sync_plus_two_leg_handoff_us=414360.100 avg_complete_route_callback_us=414370.800
+[probe] bytes=10240 avg_prior_backend_sync_us=16945.174 avg_source_to_aperture_us=133.059 avg_aperture_to_destination_us=127.437 avg_sync_plus_two_leg_handoff_us=17205.670 avg_complete_route_callback_us=17210.251
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2,Vulkan3,Vulkan4
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:56:49Z",
+    "avg_ns": 1297284800,
+    "stddev_ns": 0,
+    "avg_ts": 394.670469,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1297284800 ],
+    "samples_ts": [ 394.67 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:56:52Z",
+    "avg_ns": 9103913400,
+    "stddev_ns": 0,
+    "avg_ts": 14.059888,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 9103913400 ],
+    "samples_ts": [ 14.0599 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=6812
+[probe] layer-output copies routed through aperture=393 byteExact=True
+[probe] routed through backend cpy_tensor_async +0x38=393
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=786
+[probe] routed_payload_bytes=5242880 count=6
+[probe] routed_payload_bytes=10240 count=387
+[probe] bytes=5242880 avg_prior_backend_sync_us=297633.283 avg_source_to_aperture_us=651.150 avg_aperture_to_destination_us=1754.900 avg_sync_plus_two_leg_handoff_us=300039.333 avg_complete_route_callback_us=301058.400
+[probe] bytes=10240 avg_prior_backend_sync_us=14724.696 avg_source_to_aperture_us=137.970 avg_aperture_to_destination_us=138.349 avg_sync_plus_two_leg_handoff_us=15001.014 avg_complete_route_callback_us=15006.835
+[copy] buffer=0x1EAB22AA7C0 src=Vulkan2#l_out-10#0 dst=Vulkan2#l_out-10#0 bytes=5242880 srcbuf=0x1EAB22AAF40 dstbuf=0x1EAB22AA7C0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1EAB22AA940->0x1EAB22AA7C0; byteExact=True
+[copy] buffer=0x1EAB22AA340 src=Vulkan3#l_out-21#0 dst=Vulkan3#l_out-21#0 bytes=5242880 srcbuf=0x1EAB22AB0C0 dstbuf=0x1EAB22AA340 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1EAB22AA7C0->0x1EAB22AA340; byteExact=True
+[copy] buffer=0x1EAB22AA840 src=Vulkan4#l_out-32#0 dst=Vulkan4#l_out-32#0 bytes=5242880 srcbuf=0x1EAB22A94C0 dstbuf=0x1EAB22AA840 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1EAB22AA340->0x1EAB22AA840; byteExact=True
+[copy] buffer=0x1EAB22AA7C0 src=Vulkan2#l_out-10#0 dst=Vulkan2#l_out-10#0 bytes=5242880 srcbuf=0x1EAB22AAF40 dstbuf=0x1EAB22AA7C0 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x1EAB22AA940->0x1EAB22AA7C0; byteExact=True
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2,Vulkan3,Vulkan4
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:57:09Z",
+    "avg_ns": 1292563000,
+    "stddev_ns": 0,
+    "avg_ts": 396.112220,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1292563000 ],
+    "samples_ts": [ 396.112 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:57:12Z",
+    "avg_ns": 9085726700,
+    "stddev_ns": 0,
+    "avg_ts": 14.088031,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 9085726700 ],
+    "samples_ts": [ 14.088 ]
+  }[probe] warmup llama_bench return=0
+
+]
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:57:25Z",
+    "avg_ns": 1296641900,
+    "stddev_ns": 530839,
+    "avg_ts": 394.866198,
+    "stddev_ts": 0.161664,
+    "samples_ns": [ 1297150100, 1296091000, 1296684600 ],
+    "samples_ts": [ 394.711, 395.034, 394.853 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2/Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00/1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:57:30Z",
+    "avg_ns": 9087865933,
+    "stddev_ns": 9271550,
+    "avg_ts": 14.084725,
+    "stddev_ts": 0.014371,
+    "samples_ns": [ 9078118200, 9088907200, 9096572400 ],
+    "samples_ts": [ 14.0998, 14.0831, 14.0712 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=20228
+[probe] layer-output copies routed through aperture=1167 byteExact=False
+[probe] routed through backend cpy_tensor_async +0x38=1167
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=0
+[probe] routed_payload_bytes=5242880 count=12
+[probe] routed_payload_bytes=10240 count=1155
+[probe] bytes=5242880 avg_prior_backend_sync_us=313955.642 avg_source_to_aperture_us=628.967 avg_aperture_to_destination_us=832.725 avg_sync_plus_two_leg_handoff_us=315417.333 avg_complete_route_callback_us=315426.900
+[probe] bytes=10240 avg_prior_backend_sync_us=14676.937 avg_source_to_aperture_us=137.137 avg_aperture_to_destination_us=134.986 avg_sync_plus_two_leg_handoff_us=14949.059 avg_complete_route_callback_us=14953.130
+
+]
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1",
+    "tensor_split": "1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:58:47Z",
+    "avg_ns": 1264349700,
+    "stddev_ns": 0,
+    "avg_ts": 404.951257,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1264349700 ],
+    "samples_ts": [ 404.951 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1",
+    "tensor_split": "1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:58:50Z",
+    "avg_ns": 3198497400,
+    "stddev_ns": 0,
+    "avg_ts": 40.018791,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 3198497400 ],
+    "samples_ts": [ 40.0188 ]
+  }[probe] warmup llama_bench return=0
+
+]
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1",
+    "tensor_split": "1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:58:57Z",
+    "avg_ns": 1269108433,
+    "stddev_ns": 1482968,
+    "avg_ts": 403.433192,
+    "stddev_ts": 0.471528,
+    "samples_ns": [ 1270274900, 1267440100, 1269610300 ],
+    "samples_ts": [ 403.062, 403.964, 403.273 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1",
+    "tensor_split": "1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-29T23:59:02Z",
+    "avg_ns": 3199136566,
+    "stddev_ns": 3703624,
+    "avg_ts": 40.010832,
+    "stddev_ts": 0.046309,
+    "samples_ns": [ 3199126200, 3195439000, 3202844500 ],
+    "samples_ts": [ 40.0109, 40.0571, 39.9645 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=0
+[probe] layer-output copies routed through aperture=0 byteExact=False
+[probe] routed through backend cpy_tensor_async +0x38=0
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=0
+
+]

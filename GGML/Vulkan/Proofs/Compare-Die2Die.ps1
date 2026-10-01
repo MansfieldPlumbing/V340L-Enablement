@@ -1,6 +1,8 @@
 param(
     [int]$Trials = 20,
-    [int]$Bytes = 65536
+    [int]$Bytes = 65536,
+    [int]$Die0 = 0,
+    [int]$Die1 = 1
 )
 
 $ErrorActionPreference = 'Stop'
@@ -8,7 +10,7 @@ if ([IntPtr]::Size -ne 8) { throw '64-bit PowerShell is required.' }
 if ($Trials -lt 1 -or $Trials -gt 10000) { throw 'Trials must be 1 through 10000.' }
 if ($Bytes -lt 4096 -or $Bytes -gt 268435456 -or ($Bytes % 4)) { throw 'Bytes must be a 4-byte multiple from 4096 through 268435456.' }
 
-$binderPath = Join-Path $PSScriptRoot '..\src\New-WindowsFunctionPointerBinder.ps1'
+$binderPath = Join-Path ([IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\..'))) 'src\New-WindowsFunctionPointerBinder.ps1'
 if (-not (Test-Path -LiteralPath $binderPath)) { throw "Missing repository binder: $binderPath" }
 $api = & $binderPath
 
@@ -89,7 +91,8 @@ try {
         if((R32 $props 8) -eq 0x1002 -and $name -match 'V340'){$physical.Add($p)}
     }
     if($physical.Count -lt 2){throw "Expected at least two V340L dies; found $($physical.Count)"}
-    $physical=$physical[0..1]
+    if($Die0 -ge $physical.Count -or $Die1 -ge $physical.Count){throw "Die index out of range: Die0=$Die0, Die1=$Die1, Count=$($physical.Count)"}
+    $physical=@($physical[$Die0], $physical[$Die1])
 
     # 2. Devices & Transfer Queues
     $queueFamilies=@(0,0)

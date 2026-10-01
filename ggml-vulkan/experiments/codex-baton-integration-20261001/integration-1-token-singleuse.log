@@ -1,0 +1,61 @@
+=== V340L Stock llama.cpp GPU Hardware Baton Launcher ===
+[1/7] Validating stock binaries and runtime directory...
+  [+] Stock Vulkan DLL verified: AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E
+  [+] Model file verified: C:\Models\gemma-4-E4B-it-Q4_K_M.gguf (4.64 GB)
+[2/7] Emitting and loading V340L-LlamaBatonShim.dll...
+Emitted assembly successfully saved to: C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\V340L-LlamaBatonShim.dll (5120 bytes)
+  [+] Lowered managed assembly loaded successfully.
+[3/7] Setting up D3D12 cross-adapter fence...
+  [+] Die 0 DXGI: Radeon Pro V340L 22Q4 (LUID: E9FC010000000000)
+  [+] Die 1 DXGI: Radeon Pro V340L 22Q4 (LUID: C370020000000000)
+  [+] D3D12 cross-adapter shared handle: 0x18F8
+[4/7] Allocating permanent pinned host aperture arena...
+  [+] Allocated 32 MiB aperture arena at 0x2445D460000
+[5/7] Patching stock ggml-vulkan.dll IAT to intercept vkCreateDevice...
+  [+] IAT hook installed on stock ggml-vulkan.dll: 0x7FFFB51A0568 -> 0x7FF7D3A1B4B0
+[6/7] Initializing backends and importing hardware baton...
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+  [+] Stock Vulkan initialized through IAT hook (0 devices created with VK_KHR_external_semaphore_win32).
+  [+] Producer Device: Vulkan0 (Radeon Pro V340L 22Q4)
+  [+] Consumer Device: Vulkan1 (Radeon Pro V340L 22Q4)
+  [+] Imported aperture buffer on Die 0: 0x203BEF9B570
+  [+] Imported aperture buffer on Die 1: 0x203BEF9C1F0
+  [+] Source bridge tensor allocated in aperture.
+  [+] Die 0 VkDevice: 0x2447BE6BFF0
+  [+] Die 1 VkDevice: 0x2447BF60B10
+  [+] Imported D3D12 fence semaphore on Die 0: 0x2447BAA1090 (Queue: 0x2447BE740C0)
+  [+] Imported D3D12 fence semaphore on Die 1: 0x2447BAA2050 (Queue: 0x2447BF68BE0)
+  [+] Hooked cpy_tensor_async on Consumer Backend: 0x2447B9090A8 -> 0x7FF7D3A1B4E0
+  [+] Hooked init_backend on Device 0: 0x203BEF98E28 -> 0x7FF7D3A1B4F8
+  [+] Hooked init_backend on Device 1: 0x203BEF98648 -> 0x7FF7D3A1B510
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.BatonRuntime.dll
+BATON: preallocated 4 distinct publisher/return command resources.
+BATON: starting deterministic inference with default F16 KV.
+error: invalid argument: -no-cnv
+{
+  "PublicationCount": 0,
+  "PendingCount": 0,
+  "HandledCopies": 0,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 0,
+  "SourceGraphs": 0,
+  "DestinationGraphs": 0,
+  "AllowedSyncs": 0,
+  "ExitCode": 1,
+  "RequestedTokens": 1,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 4096
+}
+Exception: C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Run-IntegrationTail.ps1:122
+Line |
+ 122 |  if($exitCode -ne 0){throw "CLI exited $exitCode"}
+     |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | CLI exited 1

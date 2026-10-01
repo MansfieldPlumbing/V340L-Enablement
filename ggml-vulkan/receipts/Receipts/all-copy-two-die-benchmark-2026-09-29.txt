@@ -1,0 +1,225 @@
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan1,Vulkan2
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:20:36Z",
+    "avg_ns": 1265255500,
+    "stddev_ns": 0,
+    "avg_ts": 404.661351,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1265255500 ],
+    "samples_ts": [ 404.661 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:20:39Z",
+    "avg_ns": 6655921300,
+    "stddev_ns": 0,
+    "avg_ts": 19.230997,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 6655921300 ],
+    "samples_ts": [ 19.231 ]
+  }[probe] warmup llama_bench return=0
+
+]
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:20:50Z",
+    "avg_ns": 1270535366,
+    "stddev_ns": 1893464,
+    "avg_ts": 402.980327,
+    "stddev_ts": 0.600281,
+    "samples_ns": [ 1268689000, 1272471400, 1270445700 ],
+    "samples_ts": [ 403.566, 402.367, 403.008 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan1/Vulkan2",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:20:55Z",
+    "avg_ns": 6671668900,
+    "stddev_ns": 17737161,
+    "avg_ts": 19.185695,
+    "stddev_ts": 0.051083,
+    "samples_ns": [ 6680382000, 6683364400, 6651260300 ],
+    "samples_ts": [ 19.1606, 19.152, 19.2445 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=8169
+[probe] selected cross-die copies routed through aperture=8169 byteExactVerified=False
+[probe] routed through backend cpy_tensor_async +0x38=8169
+[probe] async observed/routed=8169/8169 buffer observed/routed=0/0 routeFailures=0
+[probe] async_cross_payload_bytes=1024 count=7700
+[probe] async_cross_payload_bytes=10240 count=385
+[probe] async_cross_payload_bytes=524288 count=80
+[probe] async_cross_payload_bytes=5242880 count=4
+[probe] async_cross_pair=Vulkan1->Vulkan2 count=8169
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=0
+[probe] routed_payload_bytes=5242880 count=4
+[probe] routed_payload_bytes=1024 count=7700
+[probe] routed_payload_bytes=10240 count=385
+[probe] routed_payload_bytes=524288 count=80
+[probe] bytes=5242880 avg_prior_backend_sync_us=645934.700 avg_source_to_aperture_us=614.825 avg_aperture_to_destination_us=831.475 avg_sync_plus_two_leg_handoff_us=647381.000 avg_complete_route_callback_us=647385.950
+[probe] bytes=1024 avg_prior_backend_sync_us=133.349 avg_source_to_aperture_us=70.377 avg_aperture_to_destination_us=86.656 avg_sync_plus_two_leg_handoff_us=290.382 avg_complete_route_callback_us=292.249
+[probe] bytes=10240 avg_prior_backend_sync_us=21614.026 avg_source_to_aperture_us=131.670 avg_aperture_to_destination_us=125.221 avg_sync_plus_two_leg_handoff_us=21870.917 avg_complete_route_callback_us=21874.404
+[probe] bytes=524288 avg_prior_backend_sync_us=162.039 avg_source_to_aperture_us=154.449 avg_aperture_to_destination_us=167.680 avg_sync_plus_two_leg_handoff_us=484.168 avg_complete_route_callback_us=487.279
+
+]

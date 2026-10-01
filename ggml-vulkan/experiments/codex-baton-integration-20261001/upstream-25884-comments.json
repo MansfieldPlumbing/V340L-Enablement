@@ -1,0 +1,62 @@
+[
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5014991063",
+    "author": "Hercules888",
+    "body": "Probably a duplicate of [https://github.com/ggml-org/llama.cpp/issues/25594](url)"
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5015178967",
+    "author": "0cc4m",
+    "body": "Split mode row has never been supported on Vulkan, it has always silently fallen back to split mode layer."
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5015690528",
+    "author": "Hercules888",
+    "body": "> Split mode row has never been supported on Vulkan, it has always silently fallen back to split mode layer.\n\nThank you very much for your reaction. If I understand correctly, if the --split-mode parameter is set to row or to layer in the provided example, considering your feedback, this should potentially result in the same performance?\n\nI did simulations, and have used the same command-line (as was mentioned before), with the --split-mode parameter as only difference. I ran every simulation twice (results are stable).\n\nThere is a huge difference (not only on timings but also on GPU saturation) between the 2 modes.\nAm I missing something here?\n\nInteractive simulation:\nPrefill (Web UI - split-mode row run 1/2)= 57412 tokens - 57s - 1001.74 tokens/s\nPrefill (Web UI - split-mode row run 2/2)= 57412 tokens - 57s - 999.39 tokens/s\n\nPrefill (Web UI - split-mode layer run 1/2)= 57412 tokens - 1min 20s - 709.82 tokens/s\nPrefill (Web UI - split-mode layer run 2/2)= 57412 tokens - 1min 20s - 712.69 tokens/s\n"
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5015929440",
+    "author": "0cc4m",
+    "body": "That would be because it disabled pipeline parallelism, not because it changed the split mode. We're working on making that work better, but it's not done yet."
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5020349143",
+    "author": "Hercules888",
+    "body": "Thanks again for pointing out the root cause! I saw in the code that one of the conditions that allows to influence pipeline-parallellism is actually \"model.has_tensor_overrides()\", so I now use split-mode layer, and define a dummy override (--override-tensor \"DummyIDontExist=CPU\"), and I get my performance back in the latest builds."
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066662553",
+    "author": "Neutralized",
+    "body": "I always used tensor split row on dual AMD GPU's and it always worked, i got better split between both GPU's memory and better TG/s in dense models like Qwen 3.6 27B and now i cant run it and im getting: \n\nerror loading model: device Vulkan0 does not support split buffers\n\nThis is a huge issue for me and my setup, split mode layer is splitting vram differently and i cant fit same context size and also it always had worse performance with dense model."
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066678315",
+    "author": "Neutralized",
+    "body": "> That would be because it disabled pipeline parallelism, not because it changed the split mode. We're working on making that work better, but it's not done yet.\n\nit cant be only difference, because memory allocation between GPU's and also performance is different on those modes (at least it was few months before), on ROW i get ~ 500MB free vram after start with same configuration opposed to LAYER "
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066711619",
+    "author": "Neutralized",
+    "body": "Also here is long term test proving both modes provide different perf.: \n\nhttps://github.com/ggml-org/llama.cpp/discussions/21043#discussioncomment-17754341"
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066768034",
+    "author": "Neutralized",
+    "body": "Just tested difference in TG/s between llama-b10099 (layer) and llama-b9591 (row) and theres like ~5-7% difference in speed, wheareas ROW takes less vram and is more performant\n\nMy setup: AMD 9070XT + 6700XT \n\nModel tested Qwen3.6 27B"
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066883930",
+    "author": "0cc4m",
+    "body": "Try running with `-ot \"nomatch=CPU\"`, that should disable pipeline parallel as well, without changing anything in the model. The regex shouldn't match like this."
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5066970584",
+    "author": "Neutralized",
+    "body": "> Try running with `-ot \"nomatch=CPU\"`, that should disable pipeline parallel as well, without changing anything in the model. The regex shouldn't match like this.\n\njust did that, memory allocation between GPU's is similiar as with the row mode, but speed is still affected, not sure whether its difference between version in this case, or there are still differences, , tested on b10099"
+  },
+  {
+    "html_url": "https://github.com/ggml-org/llama.cpp/issues/25884#issuecomment-5563660931",
+    "author": "github-actions[bot]",
+    "body": "This issue was closed because it has been inactive for 14 days since being marked as stale."
+  }
+]

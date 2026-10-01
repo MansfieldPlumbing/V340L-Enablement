@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-01",
+  "historicalMeasurements": true,
+  "llama": {
+    "commit": "4da6337767f973e2b4d0797e5b323d77d8565e4a",
+    "ggmlVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+    "model": "gemma-4-E4B-it-Q4_K_M.gguf",
+    "tokens": 32,
+    "context": 512,
+    "kv": "F16",
+    "runs": [
+      {
+        "decodeTokensPerSecond": 40.4,
+        "path": "stock-one",
+        "promptTokensPerSecond": 60.4
+      },
+      {
+        "decodeTokensPerSecond": 20.8,
+        "path": "stock-two",
+        "promptTokensPerSecond": 45.8
+      },
+      {
+        "decodeTokensPerSecond": [
+          21.6,
+          21.8
+        ],
+        "path": "baton-two",
+        "promptTokensPerSecond": [
+          47.0,
+          47.8
+        ]
+      },
+      {
+        "decodeTokensPerSecond": 21.8,
+        "path": "coarse-baton-two",
+        "promptTokensPerSecond": 47.2
+      }
+    ],
+    "transferBytes": 30720,
+    "copyMillisecondsApprox": 0.007,
+    "producerToCopyMilliseconds": [
+      0.15,
+      0.44
+    ],
+    "submissionsBefore": 658,
+    "submissionsAfter": 386
+  },
+  "sd15": {
+    "modelFamily": "CyberRealistic-LCM",
+    "weightsIdentical": false,
+    "partitionedUnet": false,
+    "steps": 6,
+    "seed": 42,
+    "width": 512,
+    "height": 512,
+    "runs": [
+      {
+        "directaiMilliseconds": 1838,
+        "sdcppMilliseconds": 4900,
+        "placement": "000"
+      },
+      {
+        "directaiMilliseconds": 1681,
+        "sdcppMilliseconds": 4810,
+        "placement": "111"
+      },
+      {
+        "directaiMilliseconds": 1692,
+        "sdcppMilliseconds": 4830,
+        "placement": "011"
+      },
+      {
+        "directaiMilliseconds": 1705,
+        "sdcppMilliseconds": 4810,
+        "placement": "012"
+      }
+    ]
+  }
+}

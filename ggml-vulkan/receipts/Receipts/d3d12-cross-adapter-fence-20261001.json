@@ -1,0 +1,1229 @@
+{
+  "Status": "PASS",
+  "Mode": "Native D3D12 copy-queue fence and shared-heap transport",
+  "Packets": 32,
+  "WordsPerPacket": 1024,
+  "FenceFlags": "SHARED | SHARED_CROSS_ADAPTER (0x3)",
+  "HeapFlags": "SHARED | SHARED_CROSS_ADAPTER (0x21)",
+  "ConsumerEnqueuedBeforeProducer": true,
+  "HostBoundaryCompletionChecks": 0,
+  "TerminalEventWaits": 1,
+  "VulkanInteropTested": false,
+  "ShaderConsumptionTested": false,
+  "Producer": {
+    "Ordinal": 0,
+    "DXGIIndex": 0,
+    "LUID": "E9FC010000000000",
+    "Name": "Radeon Pro V340L 22Q4"
+  },
+  "Consumer": {
+    "Ordinal": 1,
+    "DXGIIndex": 1,
+    "LUID": "C370020000000000",
+    "Name": "Radeon Pro V340L 22Q4"
+  },
+  "PayloadBytes": 131072,
+  "CpuSubmissionMilliseconds": 18.2057,
+  "QueueWaitApiMilliseconds": [
+    2.8988,
+    0.2566,
+    0.023,
+    0.0215,
+    0.0199,
+    0.0194,
+    0.0193,
+    0.0196,
+    0.0196,
+    0.02,
+    0.0209,
+    0.02,
+    0.0207,
+    0.0193,
+    0.0208,
+    0.0204,
+    0.0207,
+    0.0285,
+    0.0209,
+    0.0216,
+    0.0208,
+    0.0206,
+    0.0208,
+    0.0232,
+    0.0204,
+    0.0214,
+    0.0204,
+    0.0208,
+    0.0208,
+    0.0217,
+    0.021,
+    0.0213
+  ],
+  "TerminalWaitMilliseconds": 1.9984,
+  "TerminalWaitStatus": 0,
+  "WordsVerified": 32768,
+  "Mismatches": 0,
+  "FirstMismatch": null,
+  "Operations": [
+    {
+      "Operation": "CreateDXGIFactory1",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(0)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(0)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(1)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(1)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(2)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(2)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(4)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(4)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(5)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(5)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "EnumAdapters1(6)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "GetDesc1(6)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "D3D12CreateDevice(DXGI 0)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "D3D12CreateDevice(DXGI 1)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandQueue(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandQueue(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateFence(flags=3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateSharedHandle(cross-adapter fence)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "OpenSharedHandle(cross-adapter fence)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateFence(flags=0)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateHeap(cross-adapter)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateSharedHandle(cross-adapter heap)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "OpenSharedHandle(cross-adapter heap)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreatePlacedResource(shared buffer)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreatePlacedResource(shared buffer)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommittedResource(heap=2)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommittedResource(heap=3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Map(initial fixture)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandAllocator(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "CreateCommandList(COPY)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Close(COPY list)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=1)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=2)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=4)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=5)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=6)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=7)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=8)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=9)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=10)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=11)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=12)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=13)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=14)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=15)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=16)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=17)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=18)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=19)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=20)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=21)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=22)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=23)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=24)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=25)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=26)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=27)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=28)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=29)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=30)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=31)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Wait(sequence=32)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Consumer Queue::Signal(terminal)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=1)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=2)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=3)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=4)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=5)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=6)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=7)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=8)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=9)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=10)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=11)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=12)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=13)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=14)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=15)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=16)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=17)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=18)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=19)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=20)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=21)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=22)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=23)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=24)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=25)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=26)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=27)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=28)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=29)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=30)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=31)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Producer Queue::Signal(sequence=32)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "SetEventOnCompletion(terminal only)",
+      "HRESULT": "0x00000000"
+    },
+    {
+      "Operation": "Map(terminal diagnostic readback)",
+      "HRESULT": "0x00000000"
+    }
+  ],
+  "TimestampUtc": "2026-10-01T04:49:19.5795123Z"
+}

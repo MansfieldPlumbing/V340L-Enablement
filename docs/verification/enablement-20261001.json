@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "startedUtc": "2026-10-01T16:28:22.3215001Z",
+  "finishedUtc": "2026-10-01T16:28:26.4826720Z",
+  "powerShell": "7.7.0-preview.4",
+  "probe": [
+    {
+      "Status": "PASS",
+      "Mode": "No-build PowerShell COM/vtable probe",
+      "EnumeratedAdapters": 7,
+      "SelectedV340Adapters": 5,
+      "DirectMLReadyV340Adapters": 5,
+      "CompiledGemmShape": "[16,16] x [16,16]",
+      "BindingRequirements": [
+        {
+          "AdapterIndex": 0,
+          "RequiredDescriptors": 4,
+          "TemporaryBytes": 0,
+          "PersistentBytes": 0
+        },
+        {
+          "AdapterIndex": 1,
+          "RequiredDescriptors": 4,
+          "TemporaryBytes": 0,
+          "PersistentBytes": 0
+        },
+        {
+          "AdapterIndex": 2,
+          "RequiredDescriptors": 4,
+          "TemporaryBytes": 0,
+          "PersistentBytes": 0
+        },
+        {
+          "AdapterIndex": 3,
+          "RequiredDescriptors": 4,
+          "TemporaryBytes": 0,
+          "PersistentBytes": 0
+        },
+        {
+          "AdapterIndex": 5,
+          "RequiredDescriptors": 4,
+          "TemporaryBytes": 0,
+          "PersistentBytes": 0
+        }
+      ],
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true
+    }
+  ],
+  "gemm": [
+    {
+      "Status": "PASS",
+      "AdapterIndex": 0,
+      "V340Ordinal": 0,
+      "Adapter": "Radeon Pro V340L 22Q4",
+      "Shape": "[4,4] x [4,4]",
+      "RequiredDescriptors": 4,
+      "TemporaryBytes": 0,
+      "PersistentBytes": 0,
+      "DispatchAndReadbackMilliseconds": 24.06,
+      "MaxAbsoluteError": 0.0,
+      "OutputElementsVerified": 16,
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true,
+      "Mode": "No-build PowerShell COM/vtable dispatch",
+      "OutputValues": null
+    },
+    {
+      "Status": "PASS",
+      "AdapterIndex": 1,
+      "V340Ordinal": 1,
+      "Adapter": "Radeon Pro V340L 22Q4",
+      "Shape": "[4,4] x [4,4]",
+      "RequiredDescriptors": 4,
+      "TemporaryBytes": 0,
+      "PersistentBytes": 0,
+      "DispatchAndReadbackMilliseconds": 4.084,
+      "MaxAbsoluteError": 0.0,
+      "OutputElementsVerified": 16,
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true,
+      "Mode": "No-build PowerShell COM/vtable dispatch",
+      "OutputValues": null
+    },
+    {
+      "Status": "PASS",
+      "AdapterIndex": 2,
+      "V340Ordinal": 2,
+      "Adapter": "Radeon Pro V340L 22Q4",
+      "Shape": "[4,4] x [4,4]",
+      "RequiredDescriptors": 4,
+      "TemporaryBytes": 0,
+      "PersistentBytes": 0,
+      "DispatchAndReadbackMilliseconds": 1.606,
+      "MaxAbsoluteError": 0.0,
+      "OutputElementsVerified": 16,
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true,
+      "Mode": "No-build PowerShell COM/vtable dispatch",
+      "OutputValues": null
+    },
+    {
+      "Status": "PASS",
+      "AdapterIndex": 3,
+      "V340Ordinal": 3,
+      "Adapter": "Radeon Pro V340L 22Q4",
+      "Shape": "[4,4] x [4,4]",
+      "RequiredDescriptors": 4,
+      "TemporaryBytes": 0,
+      "PersistentBytes": 0,
+      "DispatchAndReadbackMilliseconds": 1.731,
+      "MaxAbsoluteError": 0.0,
+      "OutputElementsVerified": 16,
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true,
+      "Mode": "No-build PowerShell COM/vtable dispatch",
+      "OutputValues": null
+    },
+    {
+      "Status": "PASS",
+      "AdapterIndex": 5,
+      "V340Ordinal": 4,
+      "Adapter": "Radeon Pro V340L 22Q4",
+      "Shape": "[4,4] x [4,4]",
+      "RequiredDescriptors": 4,
+      "TemporaryBytes": 0,
+      "PersistentBytes": 0,
+      "DispatchAndReadbackMilliseconds": 1.632,
+      "MaxAbsoluteError": 0.0,
+      "OutputElementsVerified": 16,
+      "MetaCommandsDisabled": false,
+      "P2000Excluded": true,
+      "Mode": "No-build PowerShell COM/vtable dispatch",
+      "OutputValues": null
+    }
+  ]
+}

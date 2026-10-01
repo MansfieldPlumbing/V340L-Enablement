@@ -1,0 +1,58 @@
+{
+  "PublicationCount": 4,
+  "PendingCount": 0,
+  "HandledCopies": 84,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 8,
+  "SourceGraphs": 4,
+  "DestinationGraphs": 4,
+  "AllowedSyncs": 32,
+  "EventRecordCount": 4,
+  "DeferredCompletedEventCleanups": 0,
+  "NativeWaitAudit": {
+    "BoundaryWaitRequests": 0,
+    "ResolveHits": 9,
+    "WaitForFencesCalls": 443,
+    "WaitSemaphoresCalls": 0,
+    "QueueWaitIdleCalls": 0,
+    "DeviceWaitIdleCalls": 0,
+    "WaitForFencesProfileCalls": 92,
+    "WaitSemaphoresProfileCalls": 0,
+    "QueueWaitIdleProfileCalls": 0,
+    "DeviceWaitIdleProfileCalls": 0,
+    "SourceDispatchCalls": 2035,
+    "ConsumerDispatchCalls": 1653,
+    "SourceIndirectDispatchCalls": 0,
+    "ConsumerIndirectDispatchCalls": 0,
+    "SourceSubmitCalls": 57,
+    "ConsumerSubmitCalls": 58,
+    "WaitForFencesMilliseconds": 256.7763,
+    "WaitSemaphoresMilliseconds": 0.0,
+    "QueueWaitIdleMilliseconds": 0.0,
+    "DeviceWaitIdleMilliseconds": 0.0,
+    "SourceWorkgroups": 747244,
+    "ConsumerWorkgroups": 2181077,
+    "SourceSubmitMilliseconds": 28.2838,
+    "ConsumerSubmitMilliseconds": 2.5579
+  },
+  "CpuCallTimings": {
+    "SourceGraphMilliseconds": 109.689,
+    "ConsumerGraphMilliseconds": 9322.9328,
+    "PublicationMilliseconds": 12.5118
+  },
+  "DeviceSelection": "Vulkan0,Vulkan4",
+  "QueueFamilies": {
+    "Source": {
+      "Compute": 1,
+      "Transfer": 2
+    },
+    "Consumer": {
+      "Compute": 2,
+      "Transfer": 1
+    }
+  },
+  "ExitCode": 0,
+  "RequestedTokens": 1,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 710656
+}

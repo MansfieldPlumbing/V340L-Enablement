@@ -1,0 +1,25 @@
+#version 450
+// Pattern generator shader for Die 0 local VRAM
+layout(local_size_x = 64) in;
+layout(set = 0, binding = 0, std430) buffer SourceVram { uint words[]; } vram;
+layout(push_constant) uniform Params {
+    uint regionCount;
+    uint wordsPerRegion;
+    uint spacingWords;
+    uint sequence;
+} pc;
+
+void main() {
+    uint totalWords = pc.regionCount * pc.wordsPerRegion;
+    uint idx = gl_GlobalInvocationID.x;
+    if (idx >= totalWords) return;
+    
+    uint entry = idx / pc.wordsPerRegion;
+    uint wordInEntry = idx % pc.wordsPerRegion;
+    
+    uint base = 0x20000000u + (pc.sequence * 0x01000000u) + (entry * 0x00010000u);
+    uint step = entry + 1u;
+    
+    uint offsetInVram = entry * pc.spacingWords + wordInEntry;
+    vram.words[offsetInVram] = base + wordInEntry * step;
+}

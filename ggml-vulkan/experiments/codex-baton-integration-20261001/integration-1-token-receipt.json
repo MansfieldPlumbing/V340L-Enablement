@@ -1,0 +1,14 @@
+{
+  "PublicationCount": 4,
+  "PendingCount": 0,
+  "HandledCopies": 84,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 8,
+  "SourceGraphs": 4,
+  "DestinationGraphs": 4,
+  "AllowedSyncs": 32,
+  "ExitCode": 0,
+  "RequestedTokens": 1,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 710656
+}

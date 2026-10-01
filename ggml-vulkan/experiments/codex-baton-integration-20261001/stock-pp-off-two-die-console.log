@@ -1,0 +1,65 @@
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+0.00.199.672 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.200.176 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.203.148 I srv    load_model: loading model 'C:\Models\gemma-4-E4B-it-Q4_K_M.gguf'
+0.02.131.882 W load: control-looking token:      1 '<eos>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.132.390 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.133.150 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.203.188 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.04.734.244 I cmn          init: llama threadpool init, n_threads = 8
+0.04.860.669 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 512, kv_unified = 'false'
+0.04.872.164 I srv  llama_server: model loaded
+0.04.872.175 I srv  llama_server: listening on http://127.0.0.1:59301
+0.04.947.623 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.04.947.682 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11223-4da633776
+model      : C:\Models\gemma-4-E4B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> The capital of France is
+Paris. 🇫🇷✨ (It's a beautiful city!) 😊</blockquote>
+
+***
+
+0.06.865.820 I slot print_timing: id  0 | task 0 | prompt eval time =     455.83 ms /    21 tokens (   21.71 ms per token,    46.07 tokens per second)
+0.06.865.826 I slot print_timing: id  0 | task 0 |        eval time =    1462.26 ms /    32 tokens (   47.17 ms per token,    21.20 tokens per second)
+0.06.865.830 I slot print_timing: id  0 | task 0 |       total time =    1918.09 ms /    53 tokens
+0.06.865.831 I slot print_timing: id  0 | task 0 |    graphs reused =         30
+0.06.865.857 I slot      release: id  0 | task 0 | stop processing: n_tokens = 52, truncated = 0
+*If you have any other questions about France, Paris, or
+0.06.866.561 I srv    operator(): operator(): cleaning up before exit...
+
+[ Prompt: 46.1 t/s | Generation: 21.2 t/s ]
+
+
+Exiting...

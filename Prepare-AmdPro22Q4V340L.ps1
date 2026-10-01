@@ -17,7 +17,7 @@
 param(
     [string] $InstallerPath,
     [string] $SevenZipPath,
-    [string] $WorkingDirectory = (Join-Path $env:LOCALAPPDATA 'V340L-Emancipated\AMD-PRO-22Q4'),
+    [string] $WorkingDirectory = (Join-Path $env:LOCALAPPDATA 'V340L-Enablement\AMD-PRO-22Q4'),
     [switch] $Json
 )
 

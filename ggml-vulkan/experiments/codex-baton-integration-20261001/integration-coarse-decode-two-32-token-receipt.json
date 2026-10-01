@@ -1,0 +1,607 @@
+{
+  "PublicationCount": 35,
+  "PendingCount": 0,
+  "HandledCopies": 735,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 70,
+  "SourceGraphs": 35,
+  "DestinationGraphs": 35,
+  "AllowedSyncs": 526,
+  "EventRecordCount": 4,
+  "DeferredCompletedEventCleanups": 248,
+  "NativeWaitAudit": {
+    "BoundaryWaitRequests": 0,
+    "ResolveHits": 10,
+    "WaitForFencesCalls": 162,
+    "WaitSemaphoresCalls": 217,
+    "QueueWaitIdleCalls": 0,
+    "DeviceWaitIdleCalls": 0,
+    "WaitForFencesProfileCalls": 154,
+    "WaitSemaphoresProfileCalls": 217,
+    "QueueWaitIdleProfileCalls": 0,
+    "DeviceWaitIdleProfileCalls": 0,
+    "SourceDispatchCalls": 17969,
+    "ConsumerDispatchCalls": 13130,
+    "SourceIndirectDispatchCalls": 0,
+    "ConsumerIndirectDispatchCalls": 0,
+    "SourceSubmitCalls": 212,
+    "ConsumerSubmitCalls": 174,
+    "WaitForFencesMilliseconds": 1260.1085,
+    "WaitSemaphoresMilliseconds": 1.3857,
+    "QueueWaitIdleMilliseconds": 0.0,
+    "DeviceWaitIdleMilliseconds": 0.0,
+    "SourceWorkgroups": 7866952,
+    "ConsumerWorkgroups": 9038327,
+    "SourceSubmitMilliseconds": 29.7484,
+    "ConsumerSubmitMilliseconds": 27.9476
+  },
+  "WaitPhaseAudit": {
+    "WaitForFencesPhase0": {
+      "Calls": 154,
+      "Milliseconds": 1260.1195
+    },
+    "WaitForFencesPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitForFencesPhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitForFencesPhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase0": {
+      "Calls": 217,
+      "Milliseconds": 1.3927
+    },
+    "WaitSemaphoresPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "WaitSemaphoresPhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase0": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "QueueWaitIdlePhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase0": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase2": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "DeviceWaitIdlePhase3": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "GetFenceStatusPhase0": {
+      "Calls": 5452,
+      "Milliseconds": 4.2776
+    },
+    "GetFenceStatusPhase1": {
+      "Calls": 0,
+      "Milliseconds": 0.0
+    },
+    "GetFenceStatusPhase2": {
+      "Calls": 1108,
+      "Milliseconds": 0.7822
+    },
+    "GetFenceStatusPhase3": {
+      "Calls": 524,
+      "Milliseconds": 0.3843
+    }
+  },
+  "CpuCallTimings": {
+    "SourceGraphMilliseconds": 145.8562,
+    "ConsumerGraphMilliseconds": 106.7882,
+    "PublicationMilliseconds": 180.9944
+  },
+  "GpuSourceStage": {
+    "TimestampPeriodNanoseconds": 37.037037,
+    "PeriodOffset": 720,
+    "Rows": [
+      {
+        "GraphIndex": 0,
+        "Start": 739263521424,
+        "End": 739264945406,
+        "Milliseconds": 52.740073872886654
+      },
+      {
+        "GraphIndex": 1,
+        "Start": 739268364001,
+        "End": 739270371634,
+        "Milliseconds": 74.35677749412918
+      },
+      {
+        "GraphIndex": 2,
+        "Start": 739272087927,
+        "End": 739274999406,
+        "Milliseconds": 107.832555144207
+      },
+      {
+        "GraphIndex": 3,
+        "Start": 739278147473,
+        "End": 739279180121,
+        "Milliseconds": 38.246222076324464
+      },
+      {
+        "GraphIndex": 4,
+        "Start": 739280353386,
+        "End": 739281001153,
+        "Milliseconds": 23.991370278850557
+      },
+      {
+        "GraphIndex": 5,
+        "Start": 739281653082,
+        "End": 739282210849,
+        "Milliseconds": 20.65803695823288
+      },
+      {
+        "GraphIndex": 6,
+        "Start": 739282859997,
+        "End": 739283426773,
+        "Milliseconds": 20.99170362362671
+      },
+      {
+        "GraphIndex": 7,
+        "Start": 739284079189,
+        "End": 739284657537,
+        "Milliseconds": 21.42029621458435
+      },
+      {
+        "GraphIndex": 8,
+        "Start": 739285301343,
+        "End": 739285877571,
+        "Milliseconds": 21.341777696365355
+      },
+      {
+        "GraphIndex": 9,
+        "Start": 739286519648,
+        "End": 739287097928,
+        "Milliseconds": 21.41777769607544
+      },
+      {
+        "GraphIndex": 10,
+        "Start": 739287760853,
+        "End": 739288341873,
+        "Milliseconds": 21.5192591771698
+      },
+      {
+        "GraphIndex": 11,
+        "Start": 739288997207,
+        "End": 739289581538,
+        "Milliseconds": 21.641888806331636
+      },
+      {
+        "GraphIndex": 12,
+        "Start": 739290238839,
+        "End": 739290799970,
+        "Milliseconds": 20.78262955035019
+      },
+      {
+        "GraphIndex": 13,
+        "Start": 739291451792,
+        "End": 739292037648,
+        "Milliseconds": 21.698370287597655
+      },
+      {
+        "GraphIndex": 14,
+        "Start": 739292694689,
+        "End": 739293279197,
+        "Milliseconds": 21.648444361862182
+      },
+      {
+        "GraphIndex": 15,
+        "Start": 739293936937,
+        "End": 739294521873,
+        "Milliseconds": 21.664296213653564
+      },
+      {
+        "GraphIndex": 16,
+        "Start": 739295195562,
+        "End": 739295776983,
+        "Milliseconds": 21.534111028964997
+      },
+      {
+        "GraphIndex": 17,
+        "Start": 739296463910,
+        "End": 739297057770,
+        "Milliseconds": 21.994814730911255
+      },
+      {
+        "GraphIndex": 18,
+        "Start": 739297698026,
+        "End": 739298270290,
+        "Milliseconds": 21.194962882110595
+      },
+      {
+        "GraphIndex": 19,
+        "Start": 739298911938,
+        "End": 739299484170,
+        "Milliseconds": 21.19377769692993
+      },
+      {
+        "GraphIndex": 20,
+        "Start": 739300148414,
+        "End": 739300728679,
+        "Milliseconds": 21.491296214313508
+      },
+      {
+        "GraphIndex": 21,
+        "Start": 739301371487,
+        "End": 739301944695,
+        "Milliseconds": 21.229925844940187
+      },
+      {
+        "GraphIndex": 22,
+        "Start": 739302583247,
+        "End": 739303155631,
+        "Milliseconds": 21.199407326538086
+      },
+      {
+        "GraphIndex": 23,
+        "Start": 739303815506,
+        "End": 739304377192,
+        "Milliseconds": 20.803185105827332
+      },
+      {
+        "GraphIndex": 24,
+        "Start": 739305035053,
+        "End": 739305613309,
+        "Milliseconds": 21.41688880718994
+      },
+      {
+        "GraphIndex": 25,
+        "Start": 739306256060,
+        "End": 739306833912,
+        "Milliseconds": 21.401925844284058
+      },
+      {
+        "GraphIndex": 26,
+        "Start": 739307490788,
+        "End": 739308082564,
+        "Milliseconds": 21.917629546020507
+      },
+      {
+        "GraphIndex": 27,
+        "Start": 739308737609,
+        "End": 739309316321,
+        "Milliseconds": 21.433777696014403
+      },
+      {
+        "GraphIndex": 28,
+        "Start": 739309993250,
+        "End": 739310579572,
+        "Milliseconds": 21.715629546791078
+      },
+      {
+        "GraphIndex": 29,
+        "Start": 739311223542,
+        "End": 739311807036,
+        "Milliseconds": 21.61088880644989
+      },
+      {
+        "GraphIndex": 30,
+        "Start": 739312465053,
+        "End": 739313043203,
+        "Milliseconds": 21.412962881278993
+      },
+      {
+        "GraphIndex": 31,
+        "Start": 739313708119,
+        "End": 739314298710,
+        "Milliseconds": 21.87374065729904
+      },
+      {
+        "GraphIndex": 32,
+        "Start": 739314962119,
+        "End": 739315542098,
+        "Milliseconds": 21.48070362176132
+      },
+      {
+        "GraphIndex": 33,
+        "Start": 739316194274,
+        "End": 739316767459,
+        "Milliseconds": 21.229073993091582
+      },
+      {
+        "GraphIndex": 34,
+        "Start": 739317427538,
+        "End": 739318026797,
+        "Milliseconds": 22.19477769311142
+      }
+    ]
+  },
+  "GpuConsumerStage": {
+    "TimestampPeriodNanoseconds": 37.037037,
+    "PeriodOffset": 720,
+    "Rows": [
+      {
+        "GraphIndex": 0,
+        "Start": 2131413600,
+        "End": 2132555043,
+        "Milliseconds": 42.275666505397794
+      },
+      {
+        "GraphIndex": 1,
+        "Start": 2136825105,
+        "End": 2138267361,
+        "Milliseconds": 53.41688868511963
+      },
+      {
+        "GraphIndex": 2,
+        "Start": 2141489715,
+        "End": 2144312573,
+        "Milliseconds": 104.55029589746857
+      },
+      {
+        "GraphIndex": 3,
+        "Start": 2145639666,
+        "End": 2146599654,
+        "Milliseconds": 35.555110975479124
+      },
+      {
+        "GraphIndex": 4,
+        "Start": 2147456794,
+        "End": 2148046214,
+        "Milliseconds": 21.830370287094116
+      },
+      {
+        "GraphIndex": 5,
+        "Start": 2148663855,
+        "End": 2149258299,
+        "Milliseconds": 22.016444360458372
+      },
+      {
+        "GraphIndex": 6,
+        "Start": 2149880965,
+        "End": 2150473793,
+        "Milliseconds": 21.956592508834838
+      },
+      {
+        "GraphIndex": 7,
+        "Start": 2151115192,
+        "End": 2151696184,
+        "Milliseconds": 21.518222140136718
+      },
+      {
+        "GraphIndex": 8,
+        "Start": 2152332665,
+        "End": 2152912081,
+        "Milliseconds": 21.459851769989015
+      },
+      {
+        "GraphIndex": 9,
+        "Start": 2153559388,
+        "End": 2154154204,
+        "Milliseconds": 22.030222138183593
+      },
+      {
+        "GraphIndex": 10,
+        "Start": 2154803996,
+        "End": 2155393272,
+        "Milliseconds": 21.82503695378113
+      },
+      {
+        "GraphIndex": 11,
+        "Start": 2156035805,
+        "End": 2156632613,
+        "Milliseconds": 22.103999915679932
+      },
+      {
+        "GraphIndex": 12,
+        "Start": 2157253750,
+        "End": 2157845282,
+        "Milliseconds": 21.908592509017943
+      },
+      {
+        "GraphIndex": 13,
+        "Start": 2158491044,
+        "End": 2159086048,
+        "Milliseconds": 22.037185101119995
+      },
+      {
+        "GraphIndex": 14,
+        "Start": 2159733375,
+        "End": 2160328399,
+        "Milliseconds": 22.03792584185791
+      },
+      {
+        "GraphIndex": 15,
+        "Start": 2160988185,
+        "End": 2161590693,
+        "Milliseconds": 22.31511102598572
+      },
+      {
+        "GraphIndex": 16,
+        "Start": 2162243299,
+        "End": 2162856427,
+        "Milliseconds": 22.708444357818603
+      },
+      {
+        "GraphIndex": 17,
+        "Start": 2163510745,
+        "End": 2164092509,
+        "Milliseconds": 21.546814732620238
+      },
+      {
+        "GraphIndex": 18,
+        "Start": 2164722855,
+        "End": 2165304891,
+        "Milliseconds": 21.556888806655884
+      },
+      {
+        "GraphIndex": 19,
+        "Start": 2165949081,
+        "End": 2166540437,
+        "Milliseconds": 21.902073990524293
+      },
+      {
+        "GraphIndex": 20,
+        "Start": 2167181771,
+        "End": 2167762239,
+        "Milliseconds": 21.498814732803346
+      },
+      {
+        "GraphIndex": 21,
+        "Start": 2168398861,
+        "End": 2168977829,
+        "Milliseconds": 21.443259177459716
+      },
+      {
+        "GraphIndex": 22,
+        "Start": 2169621080,
+        "End": 2170212920,
+        "Milliseconds": 21.919999916381837
+      },
+      {
+        "GraphIndex": 23,
+        "Start": 2170830716,
+        "End": 2171426216,
+        "Milliseconds": 22.055555471420288
+      },
+      {
+        "GraphIndex": 24,
+        "Start": 2172065661,
+        "End": 2172648269,
+        "Milliseconds": 21.578073991760252
+      },
+      {
+        "GraphIndex": 25,
+        "Start": 2173295680,
+        "End": 2173885764,
+        "Milliseconds": 21.854962879592897
+      },
+      {
+        "GraphIndex": 26,
+        "Start": 2174541348,
+        "End": 2175131284,
+        "Milliseconds": 21.849481398132323
+      },
+      {
+        "GraphIndex": 27,
+        "Start": 2175782265,
+        "End": 2176388753,
+        "Milliseconds": 22.462518432830812
+      },
+      {
+        "GraphIndex": 28,
+        "Start": 2177032538,
+        "End": 2177615882,
+        "Milliseconds": 21.60533325091553
+      },
+      {
+        "GraphIndex": 29,
+        "Start": 2178261246,
+        "End": 2178855782,
+        "Milliseconds": 22.019851767852785
+      },
+      {
+        "GraphIndex": 30,
+        "Start": 2179506053,
+        "End": 2180098128,
+        "Milliseconds": 21.92870362005234
+      },
+      {
+        "GraphIndex": 31,
+        "Start": 2180756152,
+        "End": 2181357356,
+        "Milliseconds": 22.26681472987366
+      },
+      {
+        "GraphIndex": 32,
+        "Start": 2181998663,
+        "End": 2182586879,
+        "Milliseconds": 21.78577769467163
+      },
+      {
+        "GraphIndex": 33,
+        "Start": 2183230203,
+        "End": 2183821131,
+        "Milliseconds": 21.88622213873291
+      },
+      {
+        "GraphIndex": 34,
+        "Start": 2184487055,
+        "End": 2185082807,
+        "Milliseconds": 22.064888804718017
+      }
+    ]
+  },
+  "DeviceSelection": "Vulkan0,Vulkan1",
+  "DummyTensorOverride": false,
+  "CoarseDecode": true,
+  "CoarseDecodeGraphs": 62,
+  "MaxNodesPerSubmit": "100000",
+  "Arguments": [
+    "llama-cli.exe",
+    "-m",
+    "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "-ngl",
+    "999",
+    "-dev",
+    "Vulkan0,Vulkan1",
+    "-sm",
+    "layer",
+    "-ts",
+    "1,1",
+    "-c",
+    "512",
+    "-p",
+    "The capital of France is",
+    "-n",
+    "32",
+    "-s",
+    "1234",
+    "--temp",
+    "0",
+    "--ignore-eos",
+    "--perf",
+    "--no-warmup",
+    "--simple-io",
+    "--single-turn",
+    "--no-display-prompt",
+    "--log-file",
+    "C:\\dev\\V340L-Emancipated\\scratch\\codex-baton-integration-20261001\\integration-coarse-decode-two-native.log"
+  ],
+  "QueueFamilies": {
+    "Source": {
+      "Compute": 1,
+      "Transfer": 2
+    },
+    "Consumer": {
+      "Compute": 1,
+      "Transfer": 2
+    }
+  },
+  "ExitCode": 0,
+  "RequestedTokens": 32,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 1662976
+}

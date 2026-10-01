@@ -1,0 +1,210 @@
+=== V340L Stock llama.cpp GPU Hardware Baton Launcher ===
+[1/7] Validating stock binaries and runtime directory...
+  [+] Stock Vulkan DLL verified: AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E
+  [+] Model file verified: C:\Models\gemma-4-E4B-it-Q4_K_M.gguf (4.64 GB)
+[2/7] Emitting and loading V340L-LlamaBatonShim.dll...
+Emitted assembly successfully saved to: C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\V340L-LlamaBatonShim.dll (5120 bytes)
+  [+] Lowered managed assembly loaded successfully.
+[3/7] Setting up D3D12 cross-adapter fence...
+  [+] Die 0 DXGI: Radeon Pro V340L 22Q4 (LUID: E9FC010000000000)
+  [+] Die 1 DXGI: Radeon Pro V340L 22Q4 (LUID: C370020000000000)
+  [+] D3D12 cross-adapter shared handle: 0x18FC
+[4/7] Allocating permanent pinned host aperture arena...
+  [+] Allocated 32 MiB aperture arena at 0x22E5B6D0000
+[5/7] Patching stock ggml-vulkan.dll IAT to intercept vkCreateDevice...
+  [+] IAT hook installed on stock ggml-vulkan.dll: 0x7FFFB51A0568 -> 0x7FF7D38DB438
+[6/7] Initializing backends and importing hardware baton...
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+  [+] Stock Vulkan initialized through IAT hook (0 devices created with VK_KHR_external_semaphore_win32).
+  [+] Producer Device: Vulkan0 (Radeon Pro V340L 22Q4)
+  [+] Consumer Device: Vulkan1 (Radeon Pro V340L 22Q4)
+Validation Error: [ VUID-VkDeviceCreateInfo-robustBufferAccess-10247 ] | MessageID = 0x984a58a
+vkCreateDevice(): robustBufferAccessUpdateAfterBind is false, but both robustBufferAccess and a descriptorBinding*UpdateAfterBind feature are enabled.
+The Vulkan spec states: If the robustBufferAccess feature is enabled, and robustBufferAccessUpdateAfterBind is VK_FALSE, then descriptorBindingUniformBufferUpdateAfterBind, descriptorBindingStorageBufferUpdateAfterBind, descriptorBindingUniformTexelBufferUpdateAfterBind, and descriptorBindingStorageTexelBufferUpdateAfterBind must not be enabled (https://docs.vulkan.org/spec/latest/chapters/devsandqueues.html#VUID-VkDeviceCreateInfo-robustBufferAccess-10247)
+Objects: 1
+    [0] VkPhysicalDevice 0x1ed837ea650
+
+Validation Error: [ VUID-VkDeviceCreateInfo-robustBufferAccess-10247 ] | MessageID = 0x984a58a
+vkCreateDevice(): robustBufferAccessUpdateAfterBind is false, but both robustBufferAccess and a descriptorBinding*UpdateAfterBind feature are enabled.
+The Vulkan spec states: If the robustBufferAccess feature is enabled, and robustBufferAccessUpdateAfterBind is VK_FALSE, then descriptorBindingUniformBufferUpdateAfterBind, descriptorBindingStorageBufferUpdateAfterBind, descriptorBindingUniformTexelBufferUpdateAfterBind, and descriptorBindingStorageTexelBufferUpdateAfterBind must not be enabled (https://docs.vulkan.org/spec/latest/chapters/devsandqueues.html#VUID-VkDeviceCreateInfo-robustBufferAccess-10247)
+Objects: 1
+    [0] VkPhysicalDevice 0x1ed837ead30
+
+  [+] Imported aperture buffer on Die 0: 0x1ED83669FD0
+  [+] Imported aperture buffer on Die 1: 0x1ED836684D0
+  [+] Source bridge tensor allocated in aperture.
+  [+] Die 0 VkDevice: 0x22ED06D83E0
+  [+] Die 1 VkDevice: 0x22ED02250A0
+  [+] Imported D3D12 fence semaphore on Die 0: 0x130000000013 (Queue: 0x22ED06E04B0)
+  [+] Imported D3D12 fence semaphore on Die 1: 0x140000000014 (Queue: 0x22ED022D170)
+  [+] Hooked cpy_tensor_async on Consumer Backend: 0x22ED0307A88 -> 0x7FF7D38DB468
+  [+] Hooked init_backend on Device 0: 0x22E5D7471E8 -> 0x7FF7D38DB480
+  [+] Hooked init_backend on Device 1: 0x22E5D7476F8 -> 0x7FF7D38DB498
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.BatonRuntime.dll
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+Validation Error: [ VUID-VkCommandPoolCreateInfo-sType-sType ] | MessageID = 0xf47eac16
+vkCreateCommandPool(): pCreateInfo->sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO.
+The Vulkan spec states: sType must be VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-VkCommandPoolCreateInfo-sType-sType)
+Objects: 1
+    [0] VkDevice 0x22ed06d83e0
+
+BATON: preallocated 4 distinct publisher/return command resources.
+BATON: starting deterministic inference with default F16 KV.
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: producer graph
+BATON_TRACE: consumer graph publication
+0
+
+
+Loading model... Validation Error: [ VUID-vkCmdPipelineBarrier-srcStageMask-06461 ] | MessageID = 0x64a86be2
+vkCmdPipelineBarrier(): srcStageMask (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any pipeline stage included in srcStageMask must be supported by the capabilities of the queue family specified by the queueFamilyIndex member of the VkCommandPoolCreateInfo structure that was used to create the VkCommandPool that commandBuffer was allocated from, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-vkCmdPipelineBarrier-srcStageMask-06461)
+Objects: 1
+    [0] VkCommandBuffer 0x22ed0454ee0
+
+BATON_TRACE: publication submitted
+BATON_TRACE: submitting transfer return signal
+BATON_TRACE: submitting compute return acquire
+BATON_TRACE: submitting consumer fence wait
+Validation Error: [ VUID-vkQueueSubmit-pWaitDstStageMask-00066 ] | MessageID = 0x48e8bcee
+vkQueueSubmit(): pSubmits[0].pWaitDstStageMask[0] (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any stage flag included in any element of the pWaitDstStageMask member of any element of pSubmits must be a pipeline stage supported by one of the capabilities of queue, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitDstStageMask-00066)
+Objects: 2
+    [0] VkSemaphore 0x170000000017
+    [1] VkQueue 0x22ed022d170
+
+BATON_TRACE: return and consumer waits submitted
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: producer graph
+BATON_TRACE: consumer graph publication
+1
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11223-4da633776
+model      : C:\Models\gemma-4-E4B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> The capital of France is
+Validation Error: [ VUID-vkCmdPipelineBarrier-srcStageMask-06461 ] | MessageID = 0x64a86be2
+vkCmdPipelineBarrier(): srcStageMask (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any pipeline stage included in srcStageMask must be supported by the capabilities of the queue family specified by the queueFamilyIndex member of the VkCommandPoolCreateInfo structure that was used to create the VkCommandPool that commandBuffer was allocated from, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-vkCmdPipelineBarrier-srcStageMask-06461)
+Objects: 1
+    [0] VkCommandBuffer 0x22ed06709f0
+
+BATON_TRACE: publication submitted
+BATON_TRACE: submitting transfer return signal
+BATON_TRACE: submitting compute return acquire
+BATON_TRACE: submitting consumer fence wait
+Validation Error: [ VUID-vkQueueSubmit-pWaitDstStageMask-00066 ] | MessageID = 0x48e8bcee
+vkQueueSubmit(): pSubmits[0].pWaitDstStageMask[0] (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any stage flag included in any element of the pWaitDstStageMask member of any element of pSubmits must be a pipeline stage supported by one of the capabilities of queue, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitDstStageMask-00066)
+Objects: 2
+    [0] VkSemaphore 0x1d000000001d
+    [1] VkQueue 0x22ed022d170
+
+BATON_TRACE: return and consumer waits submitted
+BATON_TRACE: backend synchronize
+BATON_TRACE: backend synchronize
+BATON_TRACE: producer graph
+BATON_TRACE: consumer graph publication
+2
+Validation Error: [ VUID-vkCmdPipelineBarrier-srcStageMask-06461 ] | MessageID = 0x64a86be2
+vkCmdPipelineBarrier(): srcStageMask (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any pipeline stage included in srcStageMask must be supported by the capabilities of the queue family specified by the queueFamilyIndex member of the VkCommandPoolCreateInfo structure that was used to create the VkCommandPool that commandBuffer was allocated from, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/synchronization.html#VUID-vkCmdPipelineBarrier-srcStageMask-06461)
+Objects: 1
+    [0] VkCommandBuffer 0x22ed0679be0
+
+BATON_TRACE: publication submitted
+BATON_TRACE: submitting transfer return signal
+BATON_TRACE: submitting compute return acquire
+BATON_TRACE: submitting consumer fence wait
+Validation Error: [ VUID-vkQueueSubmit-pWaitDstStageMask-00066 ] | MessageID = 0x48e8bcee
+vkQueueSubmit(): pSubmits[0].pWaitDstStageMask[0] (VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT) is not compatible with the queue family properties (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT) of this command buffer.
+The Vulkan spec states: Any stage flag included in any element of the pWaitDstStageMask member of any element of pSubmits must be a pipeline stage supported by one of the capabilities of queue, as specified in the table of supported pipeline stages (https://docs.vulkan.org/spec/latest/chapters/cmdbuffers.html#VUID-vkQueueSubmit-pWaitDstStageMask-00066)
+Objects: 2
+    [0] VkSemaphore 0x230000000023
+    [1] VkQueue 0x22ed022d170
+

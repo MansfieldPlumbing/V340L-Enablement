@@ -1,0 +1,10 @@
+{
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "FirstCopyEntryReached": true,
+  "FirstStockCopyReturnedTrue": true,
+  "EntryAuditExit": 86,
+  "CopyRecordAuditExit": 88,
+  "InferenceCompleted": false,
+  "BoundaryCopiesPublished": 0,
+  "BackendInitHooksPassed": true
+}

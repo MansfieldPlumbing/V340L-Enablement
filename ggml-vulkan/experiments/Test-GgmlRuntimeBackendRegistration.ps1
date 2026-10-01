@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Registers four in-memory V340L DirectML device identities with stock ggml.
+    Registers one in-memory ggml device for each V340L die discovered on the host.
 
 .DESCRIPTION
     Emits the ggml backend-registry and device callbacks from PowerShell,
@@ -29,6 +29,11 @@ if ([IntPtr]::Size -ne 8) { throw '64-bit PowerShell is required.' }
 if ($ReportedFreeBytes -gt $ReportedTotalBytes) {
     throw 'ReportedFreeBytes cannot exceed ReportedTotalBytes.'
 }
+$v340Adapters = @(Get-CimInstance Win32_VideoController | Where-Object {
+    $_.Name -match 'Radeon Pro V340' -and $_.PNPDeviceID -match '^PCI\\VEN_1002&DEV_6864'
+})
+$deviceCount = $v340Adapters.Count
+if ($deviceCount -lt 1) { throw 'No PCI Radeon Pro V340 dies were discovered through Win32_VideoController.' }
 
 $interop = & (Join-Path $PSScriptRoot 'src\New-WindowsFunctionPointerBinder.ps1')
 $blocks = [Collections.Generic.List[IntPtr]]::new()
@@ -112,15 +117,15 @@ try {
         'msvcrt.dll', 'memset', ([IntPtr]), @([IntPtr], [int], [uint64]))
 
     $backendName = New-Ansi 'V340L-DML'
-    $deviceNames = [IntPtr[]]::new(4)
-    $deviceDescriptions = [IntPtr[]]::new(4)
-    $devices = [IntPtr[]]::new(4)
-    $bufferTypeNames = [IntPtr[]]::new(4)
-    $bufferTypes = [IntPtr[]]::new(4)
+    $deviceNames = [IntPtr[]]::new($deviceCount)
+    $deviceDescriptions = [IntPtr[]]::new($deviceCount)
+    $devices = [IntPtr[]]::new($deviceCount)
+    $bufferTypeNames = [IntPtr[]]::new($deviceCount)
+    $bufferTypes = [IntPtr[]]::new($deviceCount)
     $ordinals = [Collections.Generic.Dictionary[long, int]]::new()
     $bufferTypeOrdinals = [Collections.Generic.Dictionary[long, int]]::new()
     $liveHostAllocations = [hashtable]::Synchronized(@{})
-    for ($ordinal = 0; $ordinal -lt 4; $ordinal++) {
+    for ($ordinal = 0; $ordinal -lt $deviceCount; $ordinal++) {
         $deviceNames[$ordinal] = New-Ansi "V340L-DML$ordinal"
         $deviceDescriptions[$ordinal] = New-Ansi "Radeon Pro V340L DirectML die $ordinal"
         $bufferTypeNames[$ordinal] = New-Ansi "V340L-DML$ordinal-HOST-BUCKET"
@@ -136,11 +141,11 @@ try {
     }
     $regGetDeviceCount = New-Callback ([uint64]) @([IntPtr]) {
         param([IntPtr] $Reg)
-        [uint64]4
+        [uint64]$deviceCount
     }
     $regGetDevice = New-Callback ([IntPtr]) @([IntPtr], [uint64]) {
         param([IntPtr] $Reg, [uint64] $Index)
-        if ($Index -ge 4) { return [IntPtr]::Zero }
+        if ($Index -ge $deviceCount) { return [IntPtr]::Zero }
         $devices[[int]$Index]
     }
     $regGetProcAddress = New-Callback ([IntPtr]) @([IntPtr], [IntPtr]) {
@@ -287,7 +292,7 @@ try {
         [Runtime.InteropServices.Marshal]::WriteIntPtr($device, 48, $deviceGetBufferType)
         [Runtime.InteropServices.Marshal]::WriteIntPtr($device, 120, $registration)
     }
-    for ($ordinal = 0; $ordinal -lt 4; $ordinal++) {
+    for ($ordinal = 0; $ordinal -lt $deviceCount; $ordinal++) {
         $bufferType = $bufferTypes[$ordinal]
         [Runtime.InteropServices.Marshal]::WriteIntPtr($bufferType, 0, $bufferTypeGetName)
         [Runtime.InteropServices.Marshal]::WriteIntPtr($bufferType, 8, $bufferTypeAlloc)
@@ -307,8 +312,8 @@ try {
     if ($afterRegCount -ne ($beforeRegCount + 1)) {
         throw "Expected one new backend registration; count changed $beforeRegCount -> $afterRegCount."
     }
-    if ($afterDeviceCount -ne ($beforeDeviceCount + 4)) {
-        throw "Expected four new devices; count changed $beforeDeviceCount -> $afterDeviceCount."
+    if ($afterDeviceCount -ne ($beforeDeviceCount + $deviceCount)) {
+        throw "Expected $deviceCount new devices; count changed $beforeDeviceCount -> $afterDeviceCount."
     }
     if ($regByName.DynamicInvoke($backendName) -ne $registration) {
         throw 'ggml_backend_reg_by_name did not return the emitted registration.'
@@ -316,7 +321,7 @@ try {
 
     $observed = [Collections.Generic.List[object]]::new()
     [uint64]$bucketProofBytes = 1MB
-    for ($ordinal = 0; $ordinal -lt 4; $ordinal++) {
+    for ($ordinal = 0; $ordinal -lt $deviceCount; $ordinal++) {
         $device = $devGet.DynamicInvoke([uint64]($beforeDeviceCount + $ordinal))
         if ($device -ne $devices[$ordinal]) { throw "Registry returned the wrong pointer for die $ordinal." }
         $freeOut = New-Block 8
@@ -390,7 +395,7 @@ try {
         BackendName = 'V340L-DML'
         ApiVersion = 2
         RegisteredDevices = $observed.ToArray()
-        DeviceCountAdded = 4
+        DeviceCountAdded = $deviceCount
         RegistryRestored = $true
         BufferInterfaceImplemented = $true
         HostBucketBytesVerifiedPerDevice = $bucketProofBytes

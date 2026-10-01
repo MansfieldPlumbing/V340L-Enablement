@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "ProducerAperture",
+    "VkBuffer": "2A6B7F4B570",
+    "BufferBytes": 33554432,
+    "MemoryRequiredBytes": 33554432,
+    "Alignment": 4,
+    "HostPointerMatches": true,
+    "BufferContextOffset": 96,
+    "DevBufferPointerOffset": 16
+  },
+  {
+    "Name": "ConsumerAperture",
+    "VkBuffer": "2A6B7F4B9F0",
+    "BufferBytes": 33554432,
+    "MemoryRequiredBytes": 33554432,
+    "Alignment": 4,
+    "HostPointerMatches": true,
+    "BufferContextOffset": 96,
+    "DevBufferPointerOffset": 16
+  }
+]

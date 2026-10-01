@@ -1,0 +1,70 @@
+#version 450
+// Diagnostic reader. Queue this AFTER an imported binary semaphore wait.
+// This shader does not create cross-device ordering or poll a ready flag.
+layout(local_size_x = 64) in;
+layout(set = 0, binding = 0, std430) readonly buffer Arena { uint words[]; } arena;
+layout(set = 0, binding = 1, std430) buffer Results { uint words[]; } results;
+layout(push_constant) uniform Parameters {
+    uint footerWord;
+    uint expectedSequence;
+    uint arenaWordCount;
+    uint resultWord;
+} pc;
+const uint MAGIC = 0x56333430u;
+const uint MAX_ENTRIES = 21u;
+// Footer: magic, sequence, entryCount, payloadEndWord; then entries of
+// {offsetWord, lengthWords, expectedBase, expectedStep}.
+// Pattern for word i within an entry: expectedBase + i * expectedStep.
+// Each result is eight uints, initialized once before submission:
+// {0, 0, 0xffffffff, 0, 0, 0, 0, 0}.
+// result[0]: error flags; [1]: mismatched words; [2]: first bad arena word;
+// [3]: observed sequence; [4]: observed entry count; [5]: examined words.
+void main() {
+    uint lane = gl_LocalInvocationIndex;
+    uint outputBase = pc.resultWord;
+    if (pc.footerWord > pc.arenaWordCount ||
+        pc.arenaWordCount - pc.footerWord < 4u) {
+        if (lane == 0u) atomicOr(results.words[outputBase], 1u);
+        return;
+    }
+    uint footer = pc.footerWord;
+    uint sequence = arena.words[footer + 1u];
+    uint count = arena.words[footer + 2u];
+    uint payloadEnd = arena.words[footer + 3u];
+    if (lane == 0u) {
+        results.words[outputBase + 3u] = sequence;
+        results.words[outputBase + 4u] = count;
+    }
+    if (arena.words[footer] != MAGIC || sequence != pc.expectedSequence) {
+        if (lane == 0u) atomicOr(results.words[outputBase], 2u);
+        return;
+    }
+    if (count == 0u || count > MAX_ENTRIES || payloadEnd > footer ||
+        count > (pc.arenaWordCount - footer - 4u) / 4u) {
+        if (lane == 0u) atomicOr(results.words[outputBase], 4u);
+        return;
+    }
+    for (uint entry = 0u; entry < count; ++entry) {
+        uint descriptor = footer + 4u + 4u * entry;
+        uint offset = arena.words[descriptor];
+        uint length = arena.words[descriptor + 1u];
+        uint base = arena.words[descriptor + 2u];
+        uint step = arena.words[descriptor + 3u];
+        if (offset > payloadEnd || length > payloadEnd - offset) {
+            if (lane == 0u) atomicOr(results.words[outputBase], 8u);
+            continue;
+        }
+        for (uint word = lane; word < length;) {
+            uint actual = arena.words[offset + word];
+            uint expected = base + word * step;
+            atomicAdd(results.words[outputBase + 5u], 1u);
+            if (actual != expected) {
+                atomicOr(results.words[outputBase], 16u);
+                atomicAdd(results.words[outputBase + 1u], 1u);
+                atomicMin(results.words[outputBase + 2u], offset + word);
+            }
+            if (length - word <= 64u) break;
+            word += 64u;
+        }
+    }
+}

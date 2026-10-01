@@ -1,0 +1,202 @@
+=== V340L Stock llama.cpp GPU Hardware Baton Launcher ===
+[1/7] Validating stock binaries and runtime directory...
+  [+] Stock Vulkan DLL verified: AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E
+  [+] Model file verified: C:\Models\gemma-4-E4B-it-Q4_K_M.gguf (4.64 GB)
+[2/7] Emitting and loading V340L-LlamaBatonShim.dll...
+Emitted assembly successfully saved to: C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\V340L-LlamaBatonShim.dll (5120 bytes)
+  [+] Lowered managed assembly loaded successfully.
+[3/7] Setting up D3D12 cross-adapter fence...
+  [+] Die 0 DXGI: Radeon Pro V340L 22Q4 (LUID: E9FC010000000000)
+  [+] Die 1 DXGI: Radeon Pro V340L 22Q4 (LUID: C370020000000000)
+  [+] D3D12 cross-adapter shared handle: 0x1900
+[4/7] Allocating permanent pinned host aperture arena...
+  [+] Allocated 32 MiB aperture arena at 0x2A7DBE10000
+[5/7] Patching stock ggml-vulkan.dll IAT to intercept vkCreateDevice...
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.NativeWaitAudit.dll
+NATIVE_AUDIT: procedure-resolution guards installed before Vulkan device creation.
+  [+] IAT hook installed on stock ggml-vulkan.dll: 0x7FFFB51A0568 -> 0x7FF7D30AB438
+[6/7] Initializing backends and importing hardware baton...
+load_backend: loaded RPC backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\dev\V340L-Emancipated\scratch\codex-baton-20261001\runtime\ggml-cpu-skylakex.dll
+  [+] Stock Vulkan initialized through IAT hook (0 devices created with VK_KHR_external_semaphore_win32).
+  [+] Producer Device: Vulkan0 (Radeon Pro V340L 22Q4)
+  [+] Consumer Device: Vulkan1 (Radeon Pro V340L 22Q4)
+  [+] Imported aperture buffer on Die 0: 0x2A7FC1B1310
+  [+] Imported aperture buffer on Die 1: 0x2A7FC1B2090
+  [+] Source bridge tensor allocated in aperture.
+  [+] Die 0 VkDevice: 0x2A7FCA6ED30
+  [+] Die 1 VkDevice: 0x2A7FCA49B40
+  [+] Imported D3D12 fence semaphore on Die 0: 0x2A7FC55EAE0 (Queue: 0x2A7FCA76E00)
+  [+] Imported D3D12 fence semaphore on Die 1: 0x2A7FC55F590 (Queue: 0x2A7FCA51C10)
+  [+] Hooked cpy_tensor_async on Consumer Backend: 0x2670369F128 -> 0x7FF7D30AB468
+  [+] Hooked init_backend on Device 0: 0x267036F8188 -> 0x7FF7D30AB480
+  [+] Hooked init_backend on Device 1: 0x267036F80F8 -> 0x7FF7D30AB498
+Emitted C:\dev\V340L-Emancipated\scratch\codex-baton-integration-20261001\Codex.BatonRuntime.dll
+BATON: preallocated 40 distinct publisher/return command resources.
+BATON: starting deterministic inference with default F16 KV.
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11223-4da633776
+model      : C:\Models\gemma-4-E4B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> The capital of France is
+Paris. 🇫🇷✨ (It's a beautiful city!) 😊</blockquote>
+
+***
+
+*If you have any other questions about France, Paris, or
+WARNING: Resulting JSON is truncated as serialization has exceeded the set depth of 2.
+WARNING: Resulting JSON is truncated as serialization has exceeded the set depth of 2.
+{
+  "PublicationCount": 35,
+  "PendingCount": 0,
+  "HandledCopies": 735,
+  "BlockedBoundaryWaits": 0,
+  "OtherCopies": 70,
+  "SourceGraphs": 35,
+  "DestinationGraphs": 35,
+  "AllowedSyncs": 526,
+  "EventRecordCount": 4,
+  "DeferredCompletedEventCleanups": 248,
+  "NativeWaitAudit": {
+    "BoundaryWaitRequests": 0,
+    "ResolveHits": 6,
+    "WaitForFencesCalls": 162,
+    "WaitSemaphoresCalls": 217,
+    "QueueWaitIdleCalls": 0,
+    "DeviceWaitIdleCalls": 0,
+    "WaitForFencesProfileCalls": 154,
+    "WaitSemaphoresProfileCalls": 217,
+    "QueueWaitIdleProfileCalls": 0,
+    "DeviceWaitIdleProfileCalls": 0,
+    "WaitForFencesMilliseconds": 1273.9558,
+    "WaitSemaphoresMilliseconds": 1.3814,
+    "QueueWaitIdleMilliseconds": 0.0,
+    "DeviceWaitIdleMilliseconds": 0.0
+  },
+  "CpuCallTimings": {
+    "SourceGraphMilliseconds": 142.8764,
+    "ConsumerGraphMilliseconds": 109.0776,
+    "PublicationMilliseconds": 179.8668
+  },
+  "GpuSourceStage": {
+    "TimestampPeriodNanoseconds": 37.037037,
+    "PeriodOffset": 720,
+    "Rows": [
+      "@{GraphIndex=0; Start=635908581205; End=635909942352; Milliseconds=50.4128516595421}",
+      "@{GraphIndex=1; Start=635917482589; End=635919482648; Milliseconds=74.0762589766808}",
+      "@{GraphIndex=2; Start=635921205809; End=635924061830; Milliseconds=105.778555152042}",
+      "@{GraphIndex=3; Start=635927224193; End=635928271811; Milliseconds=38.8006665186539}",
+      "@{GraphIndex=4; Start=635929442176; End=635930096758; Milliseconds=24.2437776852951}",
+      "@{GraphIndex=5; Start=635930755577; End=635931339453; Milliseconds=21.6250369545441}",
+      "@{GraphIndex=6; Start=635931996454; End=635932579058; Milliseconds=21.5779258436127}",
+      "@{GraphIndex=7; Start=635933223313; End=635933804965; Milliseconds=21.5426665844879}",
+      "@{GraphIndex=8; Start=635934473329; End=635935051665; Milliseconds=21.4198517701416}",
+      "@{GraphIndex=9; Start=635935704454; End=635936281638; Milliseconds=21.3771851036377}",
+      "@{GraphIndex=10; Start=635936937662; End=635937529802; Milliseconds=21.9311110274506}",
+      "@{GraphIndex=11; Start=635938185565; End=635938771801; Milliseconds=21.712444361618}",
+      "@{GraphIndex=12; Start=635939431506; End=635940013262; Milliseconds=21.5465184363251}",
+      "@{GraphIndex=13; Start=635940668108; End=635941254960; Milliseconds=21.7352591763458}",
+      "@{GraphIndex=14; Start=635941921425; End=635942507877; Milliseconds=21.7204443615875}",
+      "@{GraphIndex=15; Start=635943159958; End=635943746602; Milliseconds=21.7275554726715}",
+      "@{GraphIndex=16; Start=635944414453; End=635945005873; Milliseconds=21.9044443608856}",
+      "@{GraphIndex=17; Start=635945662336; End=635946251140; Milliseconds=21.8075554723663}",
+      "@{GraphIndex=18; Start=635946918960; End=635947496052; Milliseconds=21.3737776962433}",
+      "@{GraphIndex=19; Start=635948159272; End=635948735012; Milliseconds=21.3237036223602}",
+      "@{GraphIndex=20; Start=635949398965; End=635949981369; Milliseconds=21.5705184362335}",
+      "@{GraphIndex=21; Start=635950638205; End=635951221105; Milliseconds=21.5888888065338}",
+      "@{GraphIndex=22; Start=635951876137; End=635952455973; Milliseconds=21.4754073254852}",
+      "@{GraphIndex=23; Start=635953126323; End=635953709575; Milliseconds=21.6019258435211}",
+      "@{GraphIndex=24; Start=635954370985; End=635954953813; Milliseconds=21.5862221398773}",
+      "@{GraphIndex=25; Start=635955602972; End=635956182008; Milliseconds=21.4457776959686}",
+      "@{GraphIndex=26; Start=635956845312; End=635957424044; Milliseconds=21.4345184367523}",
+      "@{GraphIndex=27; Start=635958084421; End=635958682377; Milliseconds=22.1465184340363}",
+      "@{GraphIndex=28; Start=635959336645; End=635959912141; Milliseconds=21.3146665853577}",
+      "@{GraphIndex=29; Start=635960567107; End=635961162591; Milliseconds=22.05496287883}",
+      "@{GraphIndex=30; Start=635961815259; End=635962399655; Milliseconds=21.6442962137299}",
+      "@{GraphIndex=31; Start=635963052101; End=635963637833; Milliseconds=21.6937776950226}",
+      "@{GraphIndex=32; Start=635964299779; End=635964863071; Milliseconds=20.8626665870819}",
+      "@{GraphIndex=33; Start=635965512941; End=635966100405; Milliseconds=21.757925842926}",
+      "@{GraphIndex=34; Start=635966754538; End=635967337934; Milliseconds=21.6072591768341}"
+    ]
+  },
+  "GpuConsumerStage": {
+    "TimestampPeriodNanoseconds": 37.037037,
+    "PeriodOffset": 720,
+    "Rows": [
+      "@{GraphIndex=0; Start=275932603; End=277153043; Milliseconds=45.2014813090515}",
+      "@{GraphIndex=1; Start=285456547; End=286885407; Milliseconds=52.9207405388641}",
+      "@{GraphIndex=2; Start=290083859; End=292914906; Milliseconds=104.853592192608}",
+      "@{GraphIndex=3; Start=294245647; End=295214955; Milliseconds=35.9002961593475}",
+      "@{GraphIndex=4; Start=296072029; End=296669845; Milliseconds=22.1413332488709}",
+      "@{GraphIndex=5; Start=297315483; End=297913887; Milliseconds=22.1631110265656}",
+      "@{GraphIndex=6; Start=298555812; End=299137932; Milliseconds=21.5599999177551}",
+      "@{GraphIndex=7; Start=299785045; End=300389205; Milliseconds=22.3762962109375}",
+      "@{GraphIndex=8; Start=301026482; End=301622434; Milliseconds=22.0722962120972}",
+      "@{GraphIndex=9; Start=302256045; End=302855101; Milliseconds=22.1872591746216}",
+      "@{GraphIndex=10; Start=303506768; End=304102680; Milliseconds=22.0708147306213}",
+      "@{GraphIndex=11; Start=304746811; End=305345395; Milliseconds=22.1697776932068}",
+      "@{GraphIndex=12; Start=305992554; End=306585230; Milliseconds=21.9509628792267}",
+      "@{GraphIndex=13; Start=307229197; End=307834841; Milliseconds=22.4312591736908}",
+      "@{GraphIndex=14; Start=308483856; End=309077680; Milliseconds=21.993481397583}",
+      "@{GraphIndex=15; Start=309727161; End=310327097; Milliseconds=22.2198517670898}",
+      "@{GraphIndex=16; Start=310979529; End=311577837; Milliseconds=22.1595554710236}",
+      "@{GraphIndex=17; Start=312224388; End=312834368; Milliseconds=22.5918517656708}",
+      "@{GraphIndex=18; Start=313470061; End=314073461; Milliseconds=22.3481480628967}",
+      "@{GraphIndex=19; Start=314714566; End=315317330; Milliseconds=22.324592507431}",
+      "@{GraphIndex=20; Start=315955838; End=316552202; Milliseconds=22.0875554712982}",
+      "@{GraphIndex=21; Start=317193692; End=317792952; Milliseconds=22.1948147301483}",
+      "@{GraphIndex=22; Start=318436584; End=319041372; Milliseconds=22.399555470108}",
+      "@{GraphIndex=23; Start=319691717; End=320287829; Milliseconds=22.0782221380005}",
+      "@{GraphIndex=24; Start=320933551; End=321521119; Milliseconds=21.7617776947632}",
+      "@{GraphIndex=25; Start=322156585; End=322759505; Milliseconds=22.3303702851868}",
+      "@{GraphIndex=26; Start=323397574; End=324000898; Milliseconds=22.3453332480927}",
+      "@{GraphIndex=27; Start=324660776; End=325250988; Milliseconds=21.8597036203156}",
+      "@{GraphIndex=28; Start=325884645; End=326483205; Milliseconds=22.1688888043213}",
+      "@{GraphIndex=29; Start=327142623; End=327730835; Milliseconds=21.785629546524}",
+      "@{GraphIndex=30; Start=328373587; End=328968247; Milliseconds=22.0244443604279}",
+      "@{GraphIndex=31; Start=329620090; End=330215726; Milliseconds=22.0605925084381}",
+      "@{GraphIndex=32; Start=330835590; End=331429838; Milliseconds=22.0091851012268}",
+      "@{GraphIndex=33; Start=332074784; End=332671958; Milliseconds=22.1175554711838}",
+      "@{GraphIndex=34; Start=333313596; End=333920348; Milliseconds=22.4722962105713}"
+    ]
+  },
+  "DeviceSelection": "Vulkan0,Vulkan1",
+  "ExitCode": 0,
+  "RequestedTokens": 32,
+  "StockVulkanSha256": "AE67DDD85CC9C0E777FA76368E1A63AD90DDD4B97709CBC5C46F734F97C5248E",
+  "ApertureBytesUsed": 1662976
+}
+
+[ Prompt: 47.3 t/s | Generation: 21.6 t/s ]
+
+
+Exiting...

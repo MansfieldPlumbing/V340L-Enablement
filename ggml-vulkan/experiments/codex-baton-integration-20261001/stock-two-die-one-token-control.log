@@ -1,0 +1,45 @@
+
+
+Loading model... Validation Error: [ VUID-VkDeviceCreateInfo-robustBufferAccess-10247 ] | MessageID = 0x984a58a
+vkCreateDevice(): robustBufferAccessUpdateAfterBind is false, but both robustBufferAccess and a descriptorBinding*UpdateAfterBind feature are enabled.
+The Vulkan spec states: If the robustBufferAccess feature is enabled, and robustBufferAccessUpdateAfterBind is VK_FALSE, then descriptorBindingUniformBufferUpdateAfterBind, descriptorBindingStorageBufferUpdateAfterBind, descriptorBindingUniformTexelBufferUpdateAfterBind, and descriptorBindingStorageTexelBufferUpdateAfterBind must not be enabled (https://docs.vulkan.org/spec/latest/chapters/devsandqueues.html#VUID-VkDeviceCreateInfo-robustBufferAccess-10247)
+Objects: 1
+    [0] VkPhysicalDevice 0x22839ae36d0
+
+Validation Error: [ VUID-VkDeviceCreateInfo-robustBufferAccess-10247 ] | MessageID = 0x984a58a
+vkCreateDevice(): robustBufferAccessUpdateAfterBind is false, but both robustBufferAccess and a descriptorBinding*UpdateAfterBind feature are enabled.
+The Vulkan spec states: If the robustBufferAccess feature is enabled, and robustBufferAccessUpdateAfterBind is VK_FALSE, then descriptorBindingUniformBufferUpdateAfterBind, descriptorBindingStorageBufferUpdateAfterBind, descriptorBindingUniformTexelBufferUpdateAfterBind, and descriptorBindingStorageTexelBufferUpdateAfterBind must not be enabled (https://docs.vulkan.org/spec/latest/chapters/devsandqueues.html#VUID-VkDeviceCreateInfo-robustBufferAccess-10247)
+Objects: 1
+    [0] VkPhysicalDevice 0x22839ae3930
+
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b11223-4da633776
+model      : C:\Models\gemma-4-E4B-it-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> The capital of France is
+Paris
+
+[ Prompt: 2.7 t/s | Generation: 0.0 t/s ]
+
+
+Exiting...

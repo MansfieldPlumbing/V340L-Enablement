@@ -1,0 +1,47 @@
+[
+  {
+    "path": "GGML/Vulkan/Proofs/Compare-Die2Die.ps1",
+    "bytes": 18440,
+    "sha256": "CB1585ECC78EACA8687F3CDBC5AEC1AB50DC4FCD2A8766FFD6FDF179D758A972"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/Probe-BoundaryTensors.ps1",
+    "bytes": 16438,
+    "sha256": "3F40F6A2FA15AAD23C611525F87C9A33C09033DADAD22ABC8EA0FBEF5EC2D0BA"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/README.md",
+    "bytes": 2287,
+    "sha256": "6C32138F8BC1519FC12F41C1DF0C0E34E3C01AF662E64B38F83D93876F826A08"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/results.json",
+    "bytes": 4603,
+    "sha256": "04BA5F695C302F13BBD76199C6181757B6D9098A4D03D910AF4F4973155F6993"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/results.md",
+    "bytes": 4299,
+    "sha256": "7039C5E67C594FDE9913D5FD090DC829DDB7E803BE6EB0B412C5F0C53244DD78"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/Test-GgmlApertureInterception.ps1",
+    "bytes": 24606,
+    "sha256": "7C6B7B8981628C664C088FE6C311B4E3C41DAD81017BCD79521BA55FD1C598CA"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/Test-ServerApertureRoof.ps1",
+    "bytes": 31092,
+    "sha256": "36A7586FD10E54E3EC4F533EE2906842E3284FB2C2BF0F9F4E6A037849BA22B4"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/Test-ServerApertureSync.ps1",
+    "bytes": 31877,
+    "sha256": "CAB5EC39722CCF0C1D3E45A6A38EEA78E404934D1839F171875D0782C1E61E54"
+  },
+  {
+    "path": "GGML/Vulkan/Proofs/Test-V340L-VramDrain.ps1",
+    "bytes": 16407,
+    "sha256": "D61C1594630BCD75F2279BB2433E8E4FE78F3C9DCDF26AFDC509BD0AED997148"
+  }
+]

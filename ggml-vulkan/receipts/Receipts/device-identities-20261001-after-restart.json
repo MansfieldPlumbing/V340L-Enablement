@@ -1,0 +1,114 @@
+{
+  "Devices": [
+    {
+      "Ordinal": 0,
+      "Name": "Radeon Pro V340L 22Q4",
+      "ApiVersion": 4206809,
+      "DeviceUUID": "00000000690000000000000000000000",
+      "DriverUUID": "414D442D57494E2D4452560000000000",
+      "DeviceLUID": "E9FC010000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    },
+    {
+      "Ordinal": 1,
+      "Name": "Radeon Pro V340L 22Q4",
+      "ApiVersion": 4206809,
+      "DeviceUUID": "00000000BA0000000000000000000000",
+      "DriverUUID": "414D442D57494E2D4452560000000000",
+      "DeviceLUID": "C370020000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    },
+    {
+      "Ordinal": 2,
+      "Name": "Radeon Pro V340L 22Q4",
+      "ApiVersion": 4206809,
+      "DeviceUUID": "00000000B70000000000000000000000",
+      "DriverUUID": "414D442D57494E2D4452560000000000",
+      "DeviceLUID": "324A020000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    },
+    {
+      "Ordinal": 3,
+      "Name": "Radeon Pro V340L 22Q4",
+      "ApiVersion": 4206809,
+      "DeviceUUID": "000000006C0000000000000000000000",
+      "DriverUUID": "414D442D57494E2D4452560000000000",
+      "DeviceLUID": "9923020000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    },
+    {
+      "Ordinal": 4,
+      "Name": "Quadro P2000",
+      "ApiVersion": 4206870,
+      "DeviceUUID": "8F6D93B631B167F1CF5757A7E4D0099E",
+      "DriverUUID": "E5EF6D63E7BB5559AD9AAD8B492DCEEE",
+      "DeviceLUID": "61F1010000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    },
+    {
+      "Ordinal": 5,
+      "Name": "Radeon Pro V340L 22Q4",
+      "ApiVersion": 4206809,
+      "DeviceUUID": "00000000690000000000000000000000",
+      "DriverUUID": "414D442D57494E2D4452560000000000",
+      "DeviceLUID": "771A060000000000",
+      "NodeMask": 1,
+      "LUIDValid": 1
+    }
+  ],
+  "Groups": [
+    {
+      "Group": 0,
+      "Count": 1,
+      "Ordinals": [
+        4
+      ],
+      "SubsetAllocation": 1
+    },
+    {
+      "Group": 1,
+      "Count": 1,
+      "Ordinals": [
+        0
+      ],
+      "SubsetAllocation": 0
+    },
+    {
+      "Group": 2,
+      "Count": 1,
+      "Ordinals": [
+        1
+      ],
+      "SubsetAllocation": 0
+    },
+    {
+      "Group": 3,
+      "Count": 1,
+      "Ordinals": [
+        2
+      ],
+      "SubsetAllocation": 0
+    },
+    {
+      "Group": 4,
+      "Count": 1,
+      "Ordinals": [
+        3
+      ],
+      "SubsetAllocation": 0
+    },
+    {
+      "Group": 5,
+      "Count": 1,
+      "Ordinals": [
+        5
+      ],
+      "SubsetAllocation": 0
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+load_backend: loaded RPC backend from C:\bin\llama.cpp\ggml-rpc.dll
+ggml_vulkan: Found 5 Vulkan devices:
+ggml_vulkan: 0 = Quadro P2000 (NVIDIA) | uma: 0 | fp16: 0 | bf16: 0 | fp4: 0 | warp size: 32 | shared memory: 49152 | int dot: 1 | matrix cores: none
+ggml_vulkan: 1 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 2 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 3 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+ggml_vulkan: 4 = Radeon Pro V340L 22Q4 (AMD proprietary driver) | uma: 0 | fp16: 1 | bf16: 0 | fp4: 0 | warp size: 64 | shared memory: 65536 | int dot: 0 | matrix cores: none
+load_backend: loaded Vulkan backend from C:\bin\llama.cpp\ggml-vulkan.dll
+load_backend: loaded CPU backend from C:\bin\llama.cpp\ggml-cpu-skylakex.dll
+[probe] discovered backend device: Vulkan0
+[probe] discovered backend device: Vulkan1
+[probe] discovered backend device: Vulkan2
+[probe] discovered backend device: Vulkan3
+[probe] discovered backend device: Vulkan4
+[probe] discovered backend device: CPU
+[probe] Patched selected device buffer allocators: Vulkan3,Vulkan4
+[
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 512,
+    "n_gen": 0,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:21:47Z",
+    "avg_ns": 1249999300,
+    "stddev_ns": 0,
+    "avg_ts": 409.600229,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 1249999300 ],
+    "samples_ts": [ 409.6 ]
+  },
+  {
+    "build_commit": "4da633776",
+    "build_number": 11223,
+    "cpu_info": "Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz",
+    "gpu_info": "Quadro P2000, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4, Radeon Pro V340L 22Q4",
+    "backends": "Vulkan",
+    "model_filename": "C:\\Models\\gemma-4-E4B-it-Q4_K_M.gguf",
+    "model_type": "gemma4 E4B Q4_K - Medium",
+    "model_size": 4961343656,
+    "model_n_params": 7518069290,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 8,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "q4_0",
+    "type_v": "q4_0",
+    "n_gpu_layers": 999,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "Vulkan3/Vulkan4",
+    "tensor_split": "1.00/1.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": true,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 128,
+    "n_depth": 0,
+    "test_time": "2026-09-30T00:21:50Z",
+    "avg_ns": 6663181700,
+    "stddev_ns": 0,
+    "avg_ts": 19.210042,
+    "stddev_ts": 0.000000,
+    "samples_ns": [ 6663181700 ],
+    "samples_ts": [ 19.21 ]
+  }[probe] llama_bench return=0
+[probe] destination buffer cpy_tensor callback total calls=2751
+[probe] selected cross-die copies routed through aperture=2751 byteExactVerified=True
+[probe] routed through backend cpy_tensor_async +0x38=2751
+[probe] async observed/routed=2751/2751 buffer observed/routed=0/0 routeFailures=0
+[probe] async_cross_payload_bytes=1024 count=2580
+[probe] async_cross_payload_bytes=10240 count=129
+[probe] async_cross_payload_bytes=524288 count=40
+[probe] async_cross_payload_bytes=5242880 count=2
+[probe] async_cross_pair=Vulkan3->Vulkan4 count=2751
+[probe] layer-output copies forced to stock CPU bounce=0
+[probe] layer-output events=2882
+[probe] routed_payload_bytes=5242880 count=2
+[probe] routed_payload_bytes=1024 count=2580
+[probe] routed_payload_bytes=10240 count=129
+[probe] routed_payload_bytes=524288 count=40
+[probe] bytes=5242880 avg_prior_backend_sync_us=593984.800 avg_source_to_aperture_us=555.550 avg_aperture_to_destination_us=1878.150 avg_sync_plus_two_leg_handoff_us=596418.500 avg_complete_route_callback_us=598813.850
+[probe] bytes=1024 avg_prior_backend_sync_us=134.211 avg_source_to_aperture_us=72.278 avg_aperture_to_destination_us=87.780 avg_sync_plus_two_leg_handoff_us=294.269 avg_complete_route_callback_us=296.201
+[probe] bytes=10240 avg_prior_backend_sync_us=21478.705 avg_source_to_aperture_us=141.597 avg_aperture_to_destination_us=144.479 avg_sync_plus_two_leg_handoff_us=21764.781 avg_complete_route_callback_us=21769.211
+[probe] bytes=524288 avg_prior_backend_sync_us=158.335 avg_source_to_aperture_us=160.780 avg_aperture_to_destination_us=173.142 avg_sync_plus_two_leg_handoff_us=492.257 avg_complete_route_callback_us=499.168
+[copy] buffer=0x23ABF725B70 src=Vulkan4#l_out-21#0 dst=Vulkan4#l_out-21#0 bytes=5242880 srcbuf=0x23AAD35A290 dstbuf=0x23ABF725B70 stockCpy=True
+[copy] ASYNC-ROUTED 5242880 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+[copy] ASYNC-ROUTED 524288 bytes 0x23ABF725470->0x23ABF725B70; byteExact=True
+
+]

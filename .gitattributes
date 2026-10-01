@@ -1,0 +1,5 @@
+* text=auto
+# Preserve immutable evidence byte-for-byte, including line endings.
+GGML/Vulkan/Proofs/** -text -whitespace
+ggml-vulkan/** -text -whitespace
+*.log -text -whitespace
