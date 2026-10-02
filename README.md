@@ -27,7 +27,7 @@ Verification writes JSON to `output/`. GEMM diagnostic readback occurs after the
 
 ## V340L PowerPlay and HBCC facade
 
-Double-click `V340L.cmd` in this repository, or copy `V340L*.cmd`, `V340L.ps1`, and `V340L-TUI.ps1` together to `C:\scripts\` and double-click `C:\scripts\V340L.cmd`. The window stays open after errors. `V340L-Floor.cmd`, `V340L-Presets.cmd`, and `V340L-HBCC.cmd` are clickable shortcuts into the same PowerShell facade. The script discovers present V340L dies by PCI ID and resolves each device's current display-class registry key. It does not assume a card count, PCI bus, or `00XX` key number.
+Double-click `V340L.cmd` in this repository, or copy `V340L*.cmd`, `V340L.ps1`, and `V340L-TUI.ps1` together to `C:\scripts\` and double-click `C:\scripts\V340L.cmd`. The window stays open after errors. `V340L-Floor.cmd`, `V340L-Presets.cmd`, `V340L-HBCC.cmd`, and `V340L-1200.cmd` are clickable shortcuts into the same PowerShell facade. The 1200 shortcut changes only the core maximum. The script discovers present V340L dies by PCI ID and resolves each device's current display-class registry key. It does not assume a card count, PCI bus, or `00XX` key number.
 
 ```powershell
 & C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -Mode Tui
