@@ -1,0 +1,35 @@
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local compiler/linker byproducts used only for ABI inspection
+*.obj
+*.pdb
+*.exp
+*.lib
+
+/build/
+/runtime-stock/
+/scratch/
+/output/
+*.dll
+*.exe
+*.pdb
+*.onnx
+*.safetensors
+*.gguf
+*.zip
+*.7z
+.env
+.env.*
+*.pfx
+*.key
+*.pem
