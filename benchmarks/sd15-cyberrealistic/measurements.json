@@ -1,0 +1,230 @@
+[
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-000",
+    "iteration": 0,
+    "inferenceMilliseconds": 1842.6429,
+    "metadata": "directai-single-000-00.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-000",
+    "iteration": 1,
+    "inferenceMilliseconds": 1823.6226,
+    "metadata": "directai-single-000-01.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-000",
+    "iteration": 2,
+    "inferenceMilliseconds": 1838.2776,
+    "metadata": "directai-single-000-02.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-111",
+    "iteration": 0,
+    "inferenceMilliseconds": 1681.6607,
+    "metadata": "directai-single-111-00.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-111",
+    "iteration": 1,
+    "inferenceMilliseconds": 1681.028,
+    "metadata": "directai-single-111-01.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-single-111",
+    "iteration": 2,
+    "inferenceMilliseconds": 1681.1148,
+    "metadata": "directai-single-111-02.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-011",
+    "iteration": 0,
+    "inferenceMilliseconds": 1704.4755,
+    "metadata": "directai-stages-011-00.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-011",
+    "iteration": 1,
+    "inferenceMilliseconds": 1692.305,
+    "metadata": "directai-stages-011-01.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-011",
+    "iteration": 2,
+    "inferenceMilliseconds": 1688.7309,
+    "metadata": "directai-stages-011-02.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-012",
+    "iteration": 0,
+    "inferenceMilliseconds": 1705.943,
+    "metadata": "directai-stages-012-00.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-012",
+    "iteration": 1,
+    "inferenceMilliseconds": 1696.7119,
+    "metadata": "directai-stages-012-01.json"
+  },
+  {
+    "runtime": "DirectAI ORT DirectML",
+    "placement": "directai-stages-012",
+    "iteration": 2,
+    "inferenceMilliseconds": 1705.4471,
+    "metadata": "directai-stages-012-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-000",
+    "iteration": 0,
+    "inferenceMilliseconds": 4900.0,
+    "httpMilliseconds": 4992.7473,
+    "metadata": "sdcpp-single-000-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-000",
+    "iteration": 1,
+    "inferenceMilliseconds": 4900.0,
+    "httpMilliseconds": 4998.2535,
+    "metadata": "sdcpp-single-000-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-000",
+    "iteration": 2,
+    "inferenceMilliseconds": 4930.0,
+    "httpMilliseconds": 5019.1551,
+    "metadata": "sdcpp-single-000-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-111",
+    "iteration": 0,
+    "inferenceMilliseconds": 4790.0,
+    "httpMilliseconds": 4881.2394,
+    "metadata": "sdcpp-single-111-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-111",
+    "iteration": 1,
+    "inferenceMilliseconds": 4810.0,
+    "httpMilliseconds": 4904.514,
+    "metadata": "sdcpp-single-111-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-single-111",
+    "iteration": 2,
+    "inferenceMilliseconds": 4840.0,
+    "httpMilliseconds": 4924.7035,
+    "metadata": "sdcpp-single-111-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-011",
+    "iteration": 0,
+    "inferenceMilliseconds": 4820.0,
+    "httpMilliseconds": 4909.0759,
+    "metadata": "sdcpp-stages-011-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-011",
+    "iteration": 1,
+    "inferenceMilliseconds": 4840.0,
+    "httpMilliseconds": 4936.1701,
+    "metadata": "sdcpp-stages-011-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-011",
+    "iteration": 2,
+    "inferenceMilliseconds": 4830.0,
+    "httpMilliseconds": 4924.9124,
+    "metadata": "sdcpp-stages-011-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-012",
+    "iteration": 0,
+    "inferenceMilliseconds": 4810.0,
+    "httpMilliseconds": 4904.4109,
+    "metadata": "sdcpp-stages-012-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-012",
+    "iteration": 1,
+    "inferenceMilliseconds": 4810.0,
+    "httpMilliseconds": 4897.9276,
+    "metadata": "sdcpp-stages-012-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-012",
+    "iteration": 2,
+    "inferenceMilliseconds": 4790.0,
+    "httpMilliseconds": 4888.7896,
+    "metadata": "sdcpp-stages-012-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-101",
+    "iteration": 0,
+    "inferenceMilliseconds": 4910.0,
+    "httpMilliseconds": 5002.354,
+    "metadata": "sdcpp-stages-101-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-101",
+    "iteration": 1,
+    "inferenceMilliseconds": 4880.0,
+    "httpMilliseconds": 4967.8361,
+    "metadata": "sdcpp-stages-101-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-stages-101",
+    "iteration": 2,
+    "inferenceMilliseconds": 4870.0,
+    "httpMilliseconds": 4966.6066,
+    "metadata": "sdcpp-stages-101-02.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-unet-two-default",
+    "iteration": 0,
+    "inferenceMilliseconds": 5180.0,
+    "httpMilliseconds": 5271.1433,
+    "metadata": "sdcpp-unet-two-default-00.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-unet-two-default",
+    "iteration": 1,
+    "inferenceMilliseconds": 5160.0,
+    "httpMilliseconds": 5255.9696,
+    "metadata": "sdcpp-unet-two-default-01.json"
+  },
+  {
+    "runtime": "sd.cpp Vulkan",
+    "placement": "sdcpp-unet-two-default",
+    "iteration": 2,
+    "inferenceMilliseconds": 5140.0,
+    "httpMilliseconds": 5222.8246,
+    "metadata": "sdcpp-unet-two-default-02.json"
+  }
+]

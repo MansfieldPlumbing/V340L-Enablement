@@ -1,0 +1,31 @@
+{
+  "backend": "te=Vulkan1,diffusion=Vulkan0&Vulkan1,vae=Vulkan1",
+  "error": "Response status code does not indicate success: 500 (Internal Server Error).",
+  "arguments": [
+    "-m",
+    "C:\\Models\\sd.cpp\\CyberRealistic-LCM-4.2-f16.gguf",
+    "--backend",
+    "te=Vulkan1,diffusion=Vulkan0&Vulkan1,vae=Vulkan1",
+    "--auto-fit",
+    "off",
+    "--listen-port",
+    "12345",
+    "--conditioning-cache-size",
+    "0",
+    "--type",
+    "f16",
+    "--rng",
+    "cpu",
+    "--sampling-method",
+    "lcm",
+    "--scheduler",
+    "lcm",
+    "--cfg-scale",
+    "1",
+    "--split-mode",
+    "layer",
+    "--max-vram",
+    "Vulkan0=1,Vulkan1=7"
+  ],
+  "placement": "sdcpp-unet-two-budget"
+}

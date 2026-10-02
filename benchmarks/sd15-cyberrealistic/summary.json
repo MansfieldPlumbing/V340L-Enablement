@@ -1,0 +1,72 @@
+[
+  {
+    "placement": "directai-single-000",
+    "count": 3,
+    "medianMilliseconds": 1838.2776,
+    "minimum": 1823.6226,
+    "maximum": 1842.6429
+  },
+  {
+    "placement": "directai-single-111",
+    "count": 3,
+    "medianMilliseconds": 1681.1148,
+    "minimum": 1681.028,
+    "maximum": 1681.6607
+  },
+  {
+    "placement": "directai-stages-011",
+    "count": 3,
+    "medianMilliseconds": 1692.305,
+    "minimum": 1688.7309,
+    "maximum": 1704.4755
+  },
+  {
+    "placement": "directai-stages-012",
+    "count": 3,
+    "medianMilliseconds": 1705.4471,
+    "minimum": 1696.7119,
+    "maximum": 1705.943
+  },
+  {
+    "placement": "sdcpp-single-000",
+    "count": 3,
+    "medianMilliseconds": 4900.0,
+    "minimum": 4900.0,
+    "maximum": 4930.0
+  },
+  {
+    "placement": "sdcpp-single-111",
+    "count": 3,
+    "medianMilliseconds": 4810.0,
+    "minimum": 4790.0,
+    "maximum": 4840.0
+  },
+  {
+    "placement": "sdcpp-stages-011",
+    "count": 3,
+    "medianMilliseconds": 4830.0,
+    "minimum": 4820.0,
+    "maximum": 4840.0
+  },
+  {
+    "placement": "sdcpp-stages-012",
+    "count": 3,
+    "medianMilliseconds": 4810.0,
+    "minimum": 4790.0,
+    "maximum": 4810.0
+  },
+  {
+    "placement": "sdcpp-stages-101",
+    "count": 3,
+    "medianMilliseconds": 4880.0,
+    "minimum": 4870.0,
+    "maximum": 4910.0
+  },
+  {
+    "placement": "sdcpp-unet-two-default",
+    "count": 3,
+    "medianMilliseconds": 5160.0,
+    "minimum": 5140.0,
+    "maximum": 5180.0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "fp16PayloadAudit": {
+    "vaeDecoderMatched": 133,
+    "unetMatched": 519,
+    "textEncoderInspected": 196,
+    "textEncoderMatched": 0,
+    "unetInspected": 637,
+    "vaeDecoderInspected": 137
+  },
+  "ggufConversion": "sd-cli.exe -M convert --type f16",
+  "gguf": "C:\\Models\\sd.cpp\\CyberRealistic-LCM-4.2-f16.gguf",
+  "onnx": "C:\\Models\\DirectAI\\CyberRealistic-LCM-amuse",
+  "fullWeightParityVerified": false,
+  "checkpoint": "N:\\models\\checkpoints\\cyberrealisticLCM_cyberrealistic42.safetensors"
+}

@@ -1,0 +1,28 @@
+[INFO   ] diffusion_engine.cpp:725  - loading model from 'C:\Models\sd.cpp\CyberRealistic-LCM-4.2-f16.gguf'
+[INFO   ] model_loader.cpp:215  - load C:\Models\sd.cpp\CyberRealistic-LCM-4.2-f16.gguf using gguf format
+[INFO   ] diffusion_engine.cpp:995  - Version: SD 1.x 
+[INFO   ] diffusion_engine.cpp:1522 - Weight type stat:                      f16: 1144 |     i32: 1    
+[INFO   ] diffusion_engine.cpp:1523 - Conditioner weight type stat:          f16: 196  |     i32: 1    
+[INFO   ] diffusion_engine.cpp:1524 - Diffusion model weight type stat:      f16: 686  
+[INFO   ] diffusion_engine.cpp:1525 - VAE weight type stat:                  f16: 248  
+  |##################################################| 1/1 - 0.10MB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.02s (read: 0.00s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s)
+[INFO   ] diffusion_engine.cpp:580  - Diffusion model graph-cut layer split: deferring 686 tensors across 2 runtime backends until first graph
+[INFO   ] model_builders.cpp:625  - using VAE for encoding / decoding
+[INFO   ] auto_encoder_kl.hpp:529  - vae decoder: ch = 128
+[INFO   ] diffusion_engine.cpp:1342 - total params memory size = 2035.00MB (VRAM 2035.00MB, RAM 0.00MB): text_encoders 235.06MB(VRAM), diffusion_model 1640.25MB(VRAM), vae 159.68MB(VRAM), controlnet 0.00MB(N/A), extensions 0.00MB(N/A)
+[INFO   ] diffusion_engine.cpp:1446 - running in eps-prediction mode
+[INFO   ] main.cpp:149  - listening on: http://127.0.0.1:12345
+[INFO   ] image.cpp:814  - generate_image 512x512
+[INFO   ] denoiser.hpp:1173 - get_sigmas with LCM scheduler
+[INFO   ] request.cpp:420  - sampling using LCM method
+[INFO   ] ggml_graph_cut.cpp:1034 - clip build cached graph cut plan done (taking 1 ms)
+  |##################################################| 196/196 - 1.09GB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.21s (read: 0.10s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.01s)
+[INFO   ] image.cpp:529  - get_learned_condition completed, taking 0.36s
+[INFO   ] image.cpp:866  - generating image: 1/1 - seed 42
+[INFO   ] ggml_graph_cut.cpp:1034 - unet build cached graph cut plan done (taking 4 ms)
+[INFO   ] layer_split_partition.cpp:252  - unet graph-cut layer split: Vulkan0 <- segments [0, 12), 336 tensors, 975.0 MB
+[INFO   ] layer_split_partition.cpp:252  - unet graph-cut layer split: Vulkan1 <- segments [12, 22), 350 tensors, 665.2 MB
+[WARN   ] model_manager.cpp:1753 - model manager memory on Vulkan0: reported free 7350.21 MB / total 8176.00 MB, tracked weights 0.00 MB / other runtime 0.00 MB / current runtime 0.00 MB
+[WARN   ] model_manager.cpp:1919 - model manager cannot make enough memory available on Vulkan0: need 2037.89 MB device / 1525.89 MB budget, available 7350.21 MB device / 1024.00 MB budget

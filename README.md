@@ -32,6 +32,7 @@ V340L cards exposing four Vega 10 (gfx900) dies with 8 GiB each.
 | Measurement | Result |
 | --- | --- |
 | Die-to-die transfer, 64 MiB, shared host aperture (`Compare-V340DieTransfer.ps1`, 20 trials, 2026-10-02) | Median 11.59 ms, about 11.6 GB/s across both legs; 44.8x the CPU-bounce path (519 ms); byte-for-byte verified |
+| SD1.5 LCM, 512x512, six steps, one die: DirectML (ONNX Runtime) against stock sd.cpp Vulkan | 1.68-1.84 s against 4.81-4.90 s per image; weights not fully identical, see [the benchmark](benchmarks/sd15-cyberrealistic/results.md) |
 
 A layer-split llama.cpp experiment across V340L dies did not recover
 single-die decode throughput; it is written up at

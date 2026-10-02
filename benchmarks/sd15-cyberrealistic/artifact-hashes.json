@@ -1,0 +1,26 @@
+[
+  {
+    "Path": "N:\\models\\checkpoints\\cyberrealisticLCM_cyberrealistic42.safetensors",
+    "Hash": "CC3F23C859C99AA57B934E5CC5BC5693FB149F00E0A44D5EA74B724666E5119E"
+  },
+  {
+    "Path": "C:\\Models\\sd.cpp\\CyberRealistic-LCM-4.2-f16.gguf",
+    "Hash": "DB3EAE0AA4B851F22EF69215DC38707699D8A0D6DF1300D6EDA8843AA0FAB5F5"
+  },
+  {
+    "Path": "C:\\bin\\sd.cpp\\sd-cli.exe",
+    "Hash": "40E2E2703E7EFCA2DC3F1823EF5F48F136F8FC740567B3B8F298B74788BC93AE"
+  },
+  {
+    "Path": "C:\\bin\\sd.cpp\\sd-server.exe",
+    "Hash": "54597E7C29AAE127EDEBF492F310E0AB9ECEE3E2C08F5FB9B30A453139CBEB84"
+  },
+  {
+    "Path": "C:\\bin\\sd.cpp\\ggml-vulkan.dll",
+    "Hash": "7C24C7FF74DD408E397E0A24118B60BB8B28D76439D1E0FF3D9A5B564B36667F"
+  },
+  {
+    "Path": "bin/Release/net11.0/DirectAI.dll",
+    "Hash": "CE049225375AF390B99437FEC9BC92375CD73D5B741DEF44CF66B1CBE9084F9F"
+  }
+]

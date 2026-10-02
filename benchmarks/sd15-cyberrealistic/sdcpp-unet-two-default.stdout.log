@@ -1,0 +1,73 @@
+[INFO   ] diffusion_engine.cpp:725  - loading model from 'C:\Models\sd.cpp\CyberRealistic-LCM-4.2-f16.gguf'
+[INFO   ] model_loader.cpp:215  - load C:\Models\sd.cpp\CyberRealistic-LCM-4.2-f16.gguf using gguf format
+[INFO   ] diffusion_engine.cpp:995  - Version: SD 1.x 
+[INFO   ] diffusion_engine.cpp:1522 - Weight type stat:                      f16: 1144 |     i32: 1    
+[INFO   ] diffusion_engine.cpp:1523 - Conditioner weight type stat:          f16: 196  |     i32: 1    
+[INFO   ] diffusion_engine.cpp:1524 - Diffusion model weight type stat:      f16: 686  
+[INFO   ] diffusion_engine.cpp:1525 - VAE weight type stat:                  f16: 248  
+  |##################################################| 1/1 - 0.14MB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.01s (read: 0.00s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s)
+[INFO   ] diffusion_engine.cpp:580  - Diffusion model graph-cut layer split: deferring 686 tensors across 2 runtime backends until first graph
+[INFO   ] model_builders.cpp:625  - using VAE for encoding / decoding
+[INFO   ] auto_encoder_kl.hpp:529  - vae decoder: ch = 128
+[INFO   ] diffusion_engine.cpp:1342 - total params memory size = 2035.00MB (VRAM 2035.00MB, RAM 0.00MB): text_encoders 235.06MB(VRAM), diffusion_model 1640.25MB(VRAM), vae 159.68MB(VRAM), controlnet 0.00MB(N/A), extensions 0.00MB(N/A)
+[INFO   ] diffusion_engine.cpp:1446 - running in eps-prediction mode
+[INFO   ] main.cpp:149  - listening on: http://127.0.0.1:12345
+[INFO   ] image.cpp:814  - generate_image 512x512
+[INFO   ] denoiser.hpp:1173 - get_sigmas with LCM scheduler
+[INFO   ] request.cpp:420  - sampling using LCM method
+[INFO   ] ggml_graph_cut.cpp:1034 - clip build cached graph cut plan done (taking 1 ms)
+  |##################################################| 196/196 - 1.11GB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.21s (read: 0.09s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.01s)
+[INFO   ] image.cpp:529  - get_learned_condition completed, taking 0.36s
+[INFO   ] image.cpp:866  - generating image: 1/1 - seed 42
+[INFO   ] ggml_graph_cut.cpp:1034 - unet build cached graph cut plan done (taking 4 ms)
+[INFO   ] layer_split_partition.cpp:252  - unet graph-cut layer split: Vulkan0 <- segments [0, 22), 686 tensors, 1640.3 MB
+  |#####################                             | 280/686 - 2.16GB/s[K  |###################################               | 474/686 - 2.34GB/s[K  |##################################################| 686/686 - 2.46GB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.65s (read: 0.52s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.07s)
+  |========>                                         | 1/6 - 1.63s/it[K  |================>                                 | 2/6 - 1.72it/s[K  |=========================>                        | 3/6 - 1.72it/s[K  |=================================>                | 4/6 - 1.76it/s[K  |=========================================>        | 5/6 - 1.73it/s[K  |==================================================| 6/6 - 1.76it/s[K
+[INFO   ] image.cpp:899  - sampling completed, taking 4.53s
+[INFO   ] image.cpp:913  - generating 1 latent images completed, taking 4.53s
+[INFO   ] image.cpp:554  - decoding 1 latents
+[INFO   ] ggml_graph_cut.cpp:1034 - vae build cached graph cut plan done (taking 0 ms)
+  |##################################################| 140/140 - 460.46MB/s[K
+[INFO   ] model_loader.cpp:1383 - loading tensors completed, taking 0.20s (read: 0.04s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s)
+[INFO   ] image.cpp:620  - latent 1 decoded, taking 1.72s
+[INFO   ] image.cpp:624  - decode_first_stage completed, taking 1.72s
+[INFO   ] image.cpp:1050 - generate_image completed in 6.63s
+[INFO   ] image.cpp:814  - generate_image 512x512
+[INFO   ] denoiser.hpp:1173 - get_sigmas with LCM scheduler
+[INFO   ] request.cpp:420  - sampling using LCM method
+[INFO   ] image.cpp:529  - get_learned_condition completed, taking 0.08s
+[INFO   ] image.cpp:866  - generating image: 1/1 - seed 42
+  |========>                                         | 1/6 - 1.49it/s[K  |================>                                 | 2/6 - 1.73it/s[K  |=========================>                        | 3/6 - 1.73it/s[K  |=================================>                | 4/6 - 1.73it/s[K  |=========================================>        | 5/6 - 1.72it/s[K  |==================================================| 6/6 - 1.76it/s[K
+[INFO   ] image.cpp:899  - sampling completed, taking 3.58s
+[INFO   ] image.cpp:913  - generating 1 latent images completed, taking 3.58s
+[INFO   ] image.cpp:554  - decoding 1 latents
+[INFO   ] image.cpp:620  - latent 1 decoded, taking 1.50s
+[INFO   ] image.cpp:624  - decode_first_stage completed, taking 1.51s
+[INFO   ] image.cpp:1050 - generate_image completed in 5.18s
+[INFO   ] image.cpp:814  - generate_image 512x512
+[INFO   ] denoiser.hpp:1173 - get_sigmas with LCM scheduler
+[INFO   ] request.cpp:420  - sampling using LCM method
+[INFO   ] image.cpp:529  - get_learned_condition completed, taking 0.08s
+[INFO   ] image.cpp:866  - generating image: 1/1 - seed 42
+  |========>                                         | 1/6 - 1.49it/s[K  |================>                                 | 2/6 - 1.73it/s[K  |=========================>                        | 3/6 - 1.73it/s[K  |=================================>                | 4/6 - 1.72it/s[K  |=========================================>        | 5/6 - 1.73it/s[K  |==================================================| 6/6 - 1.77it/s[K
+[INFO   ] image.cpp:899  - sampling completed, taking 3.57s
+[INFO   ] image.cpp:913  - generating 1 latent images completed, taking 3.57s
+[INFO   ] image.cpp:554  - decoding 1 latents
+[INFO   ] image.cpp:620  - latent 1 decoded, taking 1.49s
+[INFO   ] image.cpp:624  - decode_first_stage completed, taking 1.50s
+[INFO   ] image.cpp:1050 - generate_image completed in 5.16s
+[INFO   ] image.cpp:814  - generate_image 512x512
+[INFO   ] denoiser.hpp:1173 - get_sigmas with LCM scheduler
+[INFO   ] request.cpp:420  - sampling using LCM method
+[INFO   ] image.cpp:529  - get_learned_condition completed, taking 0.08s
+[INFO   ] image.cpp:866  - generating image: 1/1 - seed 42
+  |========>                                         | 1/6 - 1.52it/s[K  |================>                                 | 2/6 - 1.77it/s[K  |=========================>                        | 3/6 - 1.73it/s[K  |=================================>                | 4/6 - 1.76it/s[K  |=========================================>        | 5/6 - 1.73it/s[K  |==================================================| 6/6 - 1.73it/s[K
+[INFO   ] image.cpp:899  - sampling completed, taking 3.55s
+[INFO   ] image.cpp:913  - generating 1 latent images completed, taking 3.55s
+[INFO   ] image.cpp:554  - decoding 1 latents
+[INFO   ] image.cpp:620  - latent 1 decoded, taking 1.49s
+[INFO   ] image.cpp:624  - decode_first_stage completed, taking 1.50s
+[INFO   ] image.cpp:1050 - generate_image completed in 5.14s

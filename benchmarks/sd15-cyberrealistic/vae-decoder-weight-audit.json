@@ -1,0 +1,1723 @@
+[
+  {
+    "onnxName": "decoder.conv_in.weight",
+    "sha256": "F77CAB5F6B2BEA23415A678C69A866E2745AD5C2314E34B4F8720352153E1F72",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.conv_in.weight",
+      "shape": [
+        512,
+        4,
+        3,
+        3
+      ],
+      "byteCount": 36864,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.conv_in.bias",
+    "sha256": "EE92FE6860DF3C1F07AAA813605A29084108E22CA34891A3027C0DDC4F074B5E",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.conv_in.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.0.conv1.weight",
+    "sha256": "5B68946CF9F3425F0AFC5D11BA7AF78F5C3BB2E84A6DF6DB950AE2F9BDF06807",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.0.conv1.bias",
+    "sha256": "847FD5F67561FC632798081D8DE8C2AFFE285721204E903043DED6285BF275BE",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.0.conv2.weight",
+    "sha256": "E7A085CF4FD064C90EF4A68C933D1415CF84D30F33F39CAB7805FB1D43C86412",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.0.conv2.bias",
+    "sha256": "B413B0143B859CA2DDB16D27744DF0A1AC7DCE2A4EEE75D33814A87397EF2259",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.1.conv1.weight",
+    "sha256": "4EAF8F538EDD8E8DFD4DC392238210D525C3B2C12DCC1170B6D07A920D97C9AB",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.1.conv1.bias",
+    "sha256": "88458CE615963DCB1BF5B9FDEF8256AA7559F260AB8DE491A6D0BC639E2B7E89",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.1.conv2.weight",
+    "sha256": "A361C7F8F2551965920C0FFD04271E61C645C3C97E6503CECF63C4A1E072BCE5",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.1.conv2.bias",
+    "sha256": "72762FE09D19B0C57F5C88A5B6726C5B27368ECFED34A487BF3B9CB0B782E48F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.2.conv1.weight",
+    "sha256": "8BE632044513CBD3DF7A2690BCFC0DB0E1E0A575BDAD66ECFA4455489863A89D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.2.conv1.bias",
+    "sha256": "C3B490F9018B1FB3A398FA67DBD8610732CFB8354728E7B573F166F55882FD51",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.2.conv2.weight",
+    "sha256": "76A8F59BBBE1E1CEC646ED2D4FAB9B62398CEB1DDF6FD8F335FC3170D495375D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.resnets.2.conv2.bias",
+    "sha256": "71F23144DB0156B0998AE2321E3DE0158ADFF3509828373E6C82BFFE53CC7265",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.upsamplers.0.conv.weight",
+    "sha256": "A21084A7901685EA9E9DC859325FFF0B3AC987DFE7BAFD4F6E4A44BF509DE09B",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.upsample.conv.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.0.upsamplers.0.conv.bias",
+    "sha256": "E8A40359F33D93B28DD165735FA019D6847FC442A8D1016864C140DCBD7A6744",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.upsample.conv.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.0.conv1.weight",
+    "sha256": "65CFC9C69BE6F2F52AFC246EE2EBC624714281ED59CCC9CC6E4487D679419197",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.0.conv1.bias",
+    "sha256": "C4177F21D01B688BA0190E213FCE35569CA41E292E9DCF2CC1421D1F55C344BA",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.0.conv2.weight",
+    "sha256": "0C1DF0040CF4ED28D94B75973DAD99ACB29EE7B32A3E92E68514F321E1BD3C40",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.0.conv2.bias",
+    "sha256": "DCA83177EA41EA7EB0E0522031F5A0224A0EDED6DCBB05898F31B0E47F6F2BE4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.1.conv1.weight",
+    "sha256": "C9AAB4172862E4F7D779B73CB07769D0940FA30EC19B778E99B06017D3E44E83",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.1.conv1.bias",
+    "sha256": "26FCA9531612762EE1C8AF4B630232756D9EB1ADCAF63BE2B0E6C51ED560EA05",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.1.conv2.weight",
+    "sha256": "A49B060D48EB24F9B0FCB95485675F4592C81A49AC9E239796278C0449DE16EA",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.1.conv2.bias",
+    "sha256": "DDD6A8204B6F3C84DD82D3D5A7D4952F8F4092AEA799C3467DDE644D6AD99A05",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.2.conv1.weight",
+    "sha256": "123E3D627E55B8408776AE249338192AA3C477DDC49BB0D5C06560F4FE0FA874",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.2.conv1.bias",
+    "sha256": "3B3B70EC4D92EABA41392F8BE6CC46029E49A23C223871FC101BFD1E4355D180",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.2.conv2.weight",
+    "sha256": "90743B58F6F44BE48131469FDF294C4D4612B58380EF36DEBB28E5EEA3372DB4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.resnets.2.conv2.bias",
+    "sha256": "D3C960909F06F1BB534A5D4A157FE434AAC0340DBBEE8FBE2BFFF6F0A7680333",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.upsamplers.0.conv.weight",
+    "sha256": "E723050835D498BDC24465F345F0700885381F203B4F5278F626C0F48B1636CD",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.upsample.conv.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.1.upsamplers.0.conv.bias",
+    "sha256": "445E9030684F49D9E27B1091ACB4D86DC6A6F87CC8203E8FAADBFB9122573ED5",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.upsample.conv.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv1.weight",
+    "sha256": "680B01293DF384B84863251EBC664D81DA3F2BFFC88F9960AB131D47694E4EC6",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.conv1.weight",
+      "shape": [
+        256,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 2359296,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv1.bias",
+    "sha256": "BD4D617DF2CDB0B5BA4B01B513FC342355A211E160A29FB35ECF9859B17769F5",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.conv1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv2.weight",
+    "sha256": "31C578A9188D32FC114B6EF2EEE8AE6332E4B650050FCD8256353F6F4E5FCA39",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.conv2.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv2.bias",
+    "sha256": "DDAC625700AA01C4A43E352CEE5E979AB92663416A2F22317844DDE0107763A4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.conv2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv_shortcut.weight",
+    "sha256": "64A9C6203F1EC67BADD044074A6319CB82F31A4B78BDE1F075151AED672F4728",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.nin_shortcut.weight",
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "byteCount": 262144,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.0.conv_shortcut.bias",
+    "sha256": "160F69AFFFD037D1757215DDE282459BC3E7F1D9269D7B23EDBE1B67AE4AA699",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.nin_shortcut.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.1.conv1.weight",
+    "sha256": "D01DC4E1D38A84CC1630B45863DC89236EFDF15F24EAB94A1D75C9AF90C46FCD",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.conv1.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.1.conv1.bias",
+    "sha256": "244111B368F25466506C9B2E2D944CD7D41183E15E9BF2B49A7E982532481000",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.conv1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.1.conv2.weight",
+    "sha256": "B14DED434F047A6920C5662AC6389F6872A26476DAFC509B8B5C614766259765",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.conv2.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.1.conv2.bias",
+    "sha256": "F8295F06747F16FB7A83F623675E09F4BB1DD2D9A9CBCCE8291E7C7257875349",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.conv2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.2.conv1.weight",
+    "sha256": "83E7FD20B83386EEE017818DAB9A905220BB621C3930733782538C6E001BFD08",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.conv1.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.2.conv1.bias",
+    "sha256": "8E9D3D9BC2D9526BA3A28B4D8885E14CEE42DEA084263661E412799CF2E43876",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.conv1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.2.conv2.weight",
+    "sha256": "6CD4FC0D2B31620A52D837228FDE927D7CE369D17DA908C205EE243EE18905E4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.conv2.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.resnets.2.conv2.bias",
+    "sha256": "56967451A39E92EB0E82EFBF7FC5EF8120C167EF692813A0CBA18A60F6C1B771",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.conv2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.upsamplers.0.conv.weight",
+    "sha256": "F81C52B5EADF51EF02199F98F4210948EF9145A8E14F29E2EFEFA91FEB7A05D8",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.upsample.conv.weight",
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 1179648,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.2.upsamplers.0.conv.bias",
+    "sha256": "ECA291135F2559F5AB8EFB1ACB79D08AACC7D6C530FA10268160BD5DC5C103B0",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.upsample.conv.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv1.weight",
+    "sha256": "7F0176421416E3A815BCF49845F67E57655AB21ED60174C48974B7B2B7382B7B",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.conv1.weight",
+      "shape": [
+        128,
+        256,
+        3,
+        3
+      ],
+      "byteCount": 589824,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv1.bias",
+    "sha256": "A75C04FFC1E962F172C99C4BFA725E043EDBE7BE5BDF83802A2F2CE80076CD79",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.conv1.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv2.weight",
+    "sha256": "438C276379826ADC328FCD1BE120BF7A70FF91DAED02BD6F0127A6735687803D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.conv2.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 294912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv2.bias",
+    "sha256": "226A1E1F2FED7BA9FBE88CD374D4757FB439653E902B4D0DFA68B9F45DEEFA18",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.conv2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv_shortcut.weight",
+    "sha256": "E8CB65E90C3D53DA1604DFA5A6CAD0BC9287D44C70A78EB54195C0F819A1126F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.nin_shortcut.weight",
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "byteCount": 65536,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.0.conv_shortcut.bias",
+    "sha256": "1CAC79A2DBC6F84C14BED84689EF8CCDFF3CC78E07C9EF5265630BFE9ADBDA27",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.nin_shortcut.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.1.conv1.weight",
+    "sha256": "CAF75C5A7A2164F64D6F1639EBD591A6ECDE4ABCB8C18AF02E1B254108C0357B",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.conv1.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 294912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.1.conv1.bias",
+    "sha256": "ED79D7390A791941AE94F69E5769862E620E31E25A23373E32D08D72E34BF37E",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.conv1.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.1.conv2.weight",
+    "sha256": "BA64CA9CBC32C07A0F7A55854ED2F0DBBB7AA59E5C3B45CDDE9EECD995974741",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.conv2.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 294912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.1.conv2.bias",
+    "sha256": "8406D95AD748D485381755DC7D3B9BC9C2AE64745886F002769A7699C55B9A6D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.conv2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.2.conv1.weight",
+    "sha256": "0DF751BD2B20B2A261E82F9368606808F19C97283DEA2E3ECCF2035970D49656",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.conv1.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 294912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.2.conv1.bias",
+    "sha256": "336C97E3986BF7AF7BFA6A936B42C7C6B694E3D48F6F5046EA053603D67E895D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.conv1.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.2.conv2.weight",
+    "sha256": "0DD24A667D972540B1F31C57B01491D7A2F2AF00C968BAEAF21DCA55D9F4FD84",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.conv2.weight",
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 294912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.up_blocks.3.resnets.2.conv2.bias",
+    "sha256": "3110FE91A8631975F8EEA1FBC468D8DFD58FB0C633098E5AFD8968478C2D2EEE",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.conv2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.attentions.0.to_q.bias",
+    "sha256": "273E76E98CCC4DA0A695EDA36FD9E214F29863240055E7BF3D8F8F8F106C05B1",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.q.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.attentions.0.to_k.bias",
+    "sha256": "6E3A29937A0F70CD4E0586D31C88A1FD1BC44127333F3F11F69733EFFD638871",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.k.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.attentions.0.to_v.bias",
+    "sha256": "A0A839C4D77A4D8373D3233AB0C533F07149DC64BAA24825ADA4B8A265B2CD23",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.v.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.attentions.0.to_out.0.bias",
+    "sha256": "6DF1D2500907D4DD39298927112C4CB2E3E311F4D3B69D24B9EA37160C8B0F97",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.proj_out.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.0.conv1.weight",
+    "sha256": "30841F88404E151B90778912DEB427B7F4C75C85352E412C54BA7EFEA0358408",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.0.conv1.bias",
+    "sha256": "BACCCD2029C347575E7F38A22B3AF65A8C8B8633A05C9D4407E44C640F313B82",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.0.conv2.weight",
+    "sha256": "A413F106C03DB296AEA70DDF3DA93A6199BA7AE86C6BCE9334087A6788BAD558",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.0.conv2.bias",
+    "sha256": "DD1D64062553CC88DE06EEBC9E5B7A32AA4B8DD45339E59FF2BACBCFBA28B670",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.1.conv1.weight",
+    "sha256": "75C4F479F30C34F7C0FB7FD3150161E1E95AC86BE64E6D504B06DC13B17A5B56",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.conv1.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.1.conv1.bias",
+    "sha256": "CA2B0B84A4176205609FBE660ED4DD1C9146B57A33E75E6EC71DB8497A5712CB",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.conv1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.1.conv2.weight",
+    "sha256": "BF5303074DB20B2011702709F8E75703A821499E8F3CD25C4C90E9B0DAD45F0A",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.conv2.weight",
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "byteCount": 4718592,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.mid_block.resnets.1.conv2.bias",
+    "sha256": "BEBA2414A0788D9DFBC0CCC08A16EDDF8D5C8FFF2BEE0D0B2581C6CDFDBD6B90",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.conv2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "decoder.conv_out.weight",
+    "sha256": "818023F7A9D251436FB900236B0CF13A485409D64503CD6D642072F4B3CA5339",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.conv_out.weight",
+      "shape": [
+        3,
+        128,
+        3,
+        3
+      ],
+      "byteCount": 6912,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "onnx::Mul_915",
+    "sha256": "3B41525C93A89F0B55CE912F4978216FFCB9825DAA06309AE01C56686BF7539C",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.norm.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "onnx::Add_916",
+    "sha256": "E498D552B43915BECE34BF8C79E544A7B6802CA83C8664D1B323369B250CC623",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.attn_1.norm.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "onnx::MatMul_917",
+    "sha256": "4779035C7808904683E24C026976A5AC584155493EC8D82D49E1CB527D3CC4EC",
+    "checkpointMatch": null
+  },
+  {
+    "onnxName": "onnx::MatMul_918",
+    "sha256": "29A7F5160E0E81615739E433477E190BFEBB48FA3C9252F899FAC7EDA5EC80F6",
+    "checkpointMatch": null
+  },
+  {
+    "onnxName": "onnx::MatMul_919",
+    "sha256": "21A9ED35ED7AE9A218FAC8D44DA62E6B254FBC14FB39200FB877EFF6B9EB60C3",
+    "checkpointMatch": null
+  },
+  {
+    "onnxName": "onnx::MatMul_927",
+    "sha256": "B25DBA58638D43C2D1A8DE49A054DC092AB7194DDC0C98A6F49EC2673F2DC5BB",
+    "checkpointMatch": null
+  },
+  {
+    "onnxName": "GroupNorm_0_gamma",
+    "sha256": "C1A6A2044130B27D1944A2BE0903A4D79A5BCB6761A65817067870B12011DF61",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_0_beta",
+    "sha256": "6525355CF8505E5F91D520263BB8B271DDB4E9580ACFDCF3DB146F3C7263A079",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_1_gamma",
+    "sha256": "3160833D4E553067DB0EDE8CD168BF6B5FB2AAC1315D48F19375B92689B9D02D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_1_beta",
+    "sha256": "751A58FB00BA3ECE381DFAE2819C0CDC728A995E004C4A647D96C4CEF0A20F30",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_1.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_2_gamma",
+    "sha256": "8356725AE32F3F3177E2A7F6C3B854B85612722CF6A4C2FA432E47C807A5E92B",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_2_beta",
+    "sha256": "8219DF5CE09651A1FBCA646E27D410380CE57948CE2EB418266F9ADC630A7FC2",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_3_gamma",
+    "sha256": "9CF0FA6725FAAE8D9DCC2B111EB03A23B080943AF53B2C541D445F1B13494E3F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_3_beta",
+    "sha256": "2D449D294817ABC54D6D5215C6A844BBEAE0921FD77D5339FC835EBCA97105A3",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.mid.block_2.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_4_gamma",
+    "sha256": "47B3010236D35EBEEABACBBC4245D1C916D0F326153D24414C902941020685EE",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_4_beta",
+    "sha256": "CF29AC7AD822CB03342C95845B782F30581B5F30E734D7EE8EB0AD6452FC0480",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_5_gamma",
+    "sha256": "39E3C768E3D004094D38D63C6FC4B7C8C5BACA4EDC9ED3FC36A3E3EE7DB45C06",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_5_beta",
+    "sha256": "FD2DC6D434F6473B5E28F0890A34F8C785802AD0EF0E4EE2B6DD19DB7AFF896D",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.0.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_6_gamma",
+    "sha256": "F7B6F1D40815F076417FE1492BFE7F902EAC4A14F7FE0E894052933ED442FC92",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_6_beta",
+    "sha256": "CBB6664171745C9984E01723C65136E0A2A31AC32960CA414504C272EF64F030",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_7_gamma",
+    "sha256": "4760F15F42D6D4BB8E2A1A65A1DEB253FE49CFD63CA0B59D703519E3D1DD7B3E",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_7_beta",
+    "sha256": "9E80E4B406E2C9654840F08D4615A7974FB775A0B0C286144E708500184E0504",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.1.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_8_gamma",
+    "sha256": "CAF72065F96328BEEAE2FD1E06A9B2621C7BD595230657565B41F3E30EF4A41C",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_8_beta",
+    "sha256": "6C9C6EC4408E167A0159F3FE7D1B8E421C679D98144239554EE687BAED086E47",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_9_gamma",
+    "sha256": "509A5EFC12A077C54E23C0A2D5F2D61F80FAF158D8E9871367BB3CE2A326F54F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_9_beta",
+    "sha256": "64915255AE7953ED09239F69D1B24BECE8D20BA19C1AA38337D70F2E674BF400",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.3.block.2.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_10_gamma",
+    "sha256": "64380CECE6FDD191B9C23F782F3E0107CF860158C810019AB86B1A74C939ED00",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_10_beta",
+    "sha256": "66424A4F7FF741A49A8E7DCBB63BCEC30CCB2BE7E3C9F6F7BC1A54A6C6F53665",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_11_gamma",
+    "sha256": "970C517FC91FE1B4F719E955E241738E80FF9D3CBFD39A8E44292B60B73F8CC9",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_11_beta",
+    "sha256": "ABDDBBDF879BC6BE7A2C85BF25F36AC51649CDCCF656F7F83F39907EEEB48A10",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.0.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_12_gamma",
+    "sha256": "8A84643C6C0355500496085168C05C6EC71F53011570159725C41248829C42C6",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_12_beta",
+    "sha256": "DDB6C25B4C310AE78F639EB727C2B1B52D8AEE902F0C527E5FD26B8FF4FCF6E3",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_13_gamma",
+    "sha256": "4AEDDC02F3AE9AF54BC9D4BE7CE74398C37D90EE1FED601E9DEA612BFBF3CD69",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_13_beta",
+    "sha256": "F20CF9533570FD323EBA8865D896008C8CCCB57E558372A8EBB58359FBA03B09",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.1.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_14_gamma",
+    "sha256": "91B2133984945B3139DD17253605D108A5F5375E954E96204555604EA85A9583",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_14_beta",
+    "sha256": "C88D5BDFB2DAB52B7292C1884850AB8D6DB6AB0657E9006C86A0785E6F5A86E4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_15_gamma",
+    "sha256": "079D1F8FFD4A29636C596482F93E372A9F0132EC52D1AD929C8750797DA3C590",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.norm2.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_15_beta",
+    "sha256": "DFAFB484806D70770B365CB4CA3326FAF274C2D33B8EC51F3166C2FB280BA7DE",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.2.block.2.norm2.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_16_gamma",
+    "sha256": "8EB280DF535FD32336B0AE80998AAD41042AB02780BED5A7EF13F913217B8995",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.norm1.weight",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_16_beta",
+    "sha256": "508CCA49767FC08C7779D24EB41146EB1B5F670D7546B2E7A7ECA2B7070CECD7",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.norm1.bias",
+      "shape": [
+        512
+      ],
+      "byteCount": 1024,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_17_gamma",
+    "sha256": "4E2C0BB07977A69E28F156B1208043F8E16AF49AA2443B7577DAD1E592A482DA",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.norm2.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_17_beta",
+    "sha256": "7F9A85D6E87BC865808F2CC69586C1240D2AF8EBED1ABDDAE6639C38C0A54675",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.0.norm2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_18_gamma",
+    "sha256": "49083303B95DC589056FC6FB5DE41FE3E782FA718DEA3D60B4B270D04DDD066C",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.norm1.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_18_beta",
+    "sha256": "F15703E5382B4C48474F86B45B1953A2162D08749E3501A43D77C0A8C34D390F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.norm1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_19_gamma",
+    "sha256": "DCACFF7824AFDFA97B6B4DD61098423F45C2C12D08364E63D502F77F2458238B",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.norm2.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_19_beta",
+    "sha256": "B6794B1CCE3D9AEE97F45ED9CE0F0FFC1DABE54844BC9BE5516A329ECC49DE7A",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.1.norm2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_20_gamma",
+    "sha256": "C413E9038D31F6586140959111B5790B773E6D7A5A85736D169CC37BE02D94D8",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.norm1.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_20_beta",
+    "sha256": "85E65E19F336B7AA70592E158240220602F73FA962F56A90AB5C4E3D7CF1E20C",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.norm1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_21_gamma",
+    "sha256": "5D00E4E04E5E6468B637ADD6B7949B1013803D10E0B69AE117F388D006E3F139",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.norm2.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_21_beta",
+    "sha256": "9B6F8F700FEC00240BF537EBE91C66DC40EC6B0629539684ED5811E030509939",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.1.block.2.norm2.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_22_gamma",
+    "sha256": "588DCB7D4774413D8A283D3529F667B53FFD72C0C7644FC92040360B1D5F84E1",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.norm1.weight",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_22_beta",
+    "sha256": "CC78416C0355EB25445FBB352EC92515C7A9A7D5B8A38C3645EFFEC2D3262F62",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.norm1.bias",
+      "shape": [
+        256
+      ],
+      "byteCount": 512,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_23_gamma",
+    "sha256": "321A62E43B10D228AA8698D5C6E996B6F985030ECDC43C52292B80E36F73FC34",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.norm2.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_23_beta",
+    "sha256": "D9F521340552C77976FCE9F6F9B891607110A177E99F16831F43A7B5CFD8EA7F",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.0.norm2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_24_gamma",
+    "sha256": "9788CCF7A82486DA817EC65627BADEAD178B94B20AA23759090EE42A076983CE",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.norm1.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_24_beta",
+    "sha256": "328225DE3BC19853AF50178997E237D1D38A12FE05CC64A5AFB7417021727C0A",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.norm1.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_25_gamma",
+    "sha256": "9624BBAFBF44837ED5B52FD83A2F730CDC3580FB40C224409CECFEF914E64B20",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.norm2.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_25_beta",
+    "sha256": "2B2350FDEE69774EE754CBE6E2A0D36B5CE9700EB03C159771DCF7D4575294D5",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.1.norm2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_26_gamma",
+    "sha256": "A7CB17CA4BB1990E8CB6D2D9D69446B64C24939332B0E19B3FFEEF033B1142A9",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.norm1.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_26_beta",
+    "sha256": "D6B09D255E166013728E531520C60326C02F98F5E9699F64FBC9348E5CD05052",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.norm1.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_27_gamma",
+    "sha256": "B3D36AE77B87CB44D534B9987A55D9E9CCF81498C901AE1BFC900F80DB042EA4",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.norm2.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_27_beta",
+    "sha256": "19B4AE4EA737DA2D20318B482CA6E50CD3C9D37E2653BAC9752C57FBC8C17463",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.up.0.block.2.norm2.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_28_gamma",
+    "sha256": "2DE5ACE314C902C78784FE69F273210DC507B8A160E1CFEF8C27112061A9C9F5",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.norm_out.weight",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  },
+  {
+    "onnxName": "GroupNorm_28_beta",
+    "sha256": "D1DFCFE507EA54713E19C2524DF422E47F809F6D465518272360B4106DFE7CD8",
+    "checkpointMatch": {
+      "checkpointName": "first_stage_model.decoder.norm_out.bias",
+      "shape": [
+        128
+      ],
+      "byteCount": 256,
+      "dtype": "F16"
+    }
+  }
+]
