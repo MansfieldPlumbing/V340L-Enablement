@@ -25,6 +25,24 @@ Use x64 PowerShell and explicit executable paths:
 
 Verification writes JSON to `output/`. GEMM diagnostic readback occurs after the test's GPU work completes; it is not a multi-device inference handoff.
 
+## V340L PowerPlay and HBCC facade
+
+Double-click `V340L.cmd` in this repository, or copy `V340L*.cmd`, `V340L.ps1`, and `V340L-TUI.ps1` together to `C:\scripts\` and double-click `C:\scripts\V340L.cmd`. The window stays open after errors. `V340L-Floor.cmd`, `V340L-Presets.cmd`, and `V340L-HBCC.cmd` are clickable shortcuts into the same PowerShell facade. The script discovers present V340L dies by PCI ID and resolves each device's current display-class registry key. It does not assume a card count, PCI bus, or `00XX` key number.
+
+```powershell
+& C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -Mode Tui
+& C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -Mode Floor -Apply
+& C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -Mode Preset -Preset Fast -Apply
+& C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -CoreMaxMHz 1200 -Apply
+& C:\bin\pwsh\pwsh.exe -NoProfile -File .\V340L.ps1 -Mode HBCC -Apply
+```
+
+The five clock presets are `VeryLow` (600/300 MHz core/memory maximum), `Low` (750/470), `Quiet` (900/600), `Balanced` (1050/700), and `Fast` (1200/800). `Floor` sets every core state to 300 MHz and every memory state to 167 MHz. Presets and custom edits preserve existing voltage entries. They are operator experiments, not validated voltage or power limits. Without `-Apply`, the command previews its candidate. `-Apply` requests elevation, saves a before-backup, writes the same candidate to every present die, and verifies registry readback. A reboot is needed for driver ingestion; registry readback alone does not prove loaded clocks or workload stability.
+
+The editor accepts an existing Vega 10 PowerPlay 8.1 SPPT override with eight core and four memory dependency states. It refuses to write if a present die lacks an override or the discovered dies have different table hashes; obtain and verify the exact VBIOS PowerPlay table before first installation. On this workstation, it also updates the existing managed boot profile so it will not revert the new settings. Machines without that boot profile receive a warning and no scheduled task is created.
+
+`-Mode HBCC` reports `KMD_EnablePageMigration` and `KMD_VirtualSegmentSize` at each discovered key. `-Apply` backs up the prior presence, type and value of both entries, writes DWORD zero, and verifies registry readback. Reboot and check dedicated memory again; this script does not reset live GPU devices. The HBCC operation is separate from PowerPlay clock editing.
+
 ## Recorded performance
 See [machine-readable summary](docs/benchmarks.json) and the postmortem for controls and limitations. No new performance run is implied by this repository reorganization.
 
